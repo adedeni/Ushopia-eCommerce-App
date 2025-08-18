@@ -35,7 +35,7 @@
 <p align="center">
   <img src="assets/images/on_boarding_images/sammy-line-shopping.gif" alt="Onboarding" width="200"/>
   <img src="assets/images/animations/sammy-line-sale.png" alt="Sale Animation" width="200"/>
-  <img src="assets/images/banners/banner_1.jpg" alt="Banner" width="200"/>
+  <img src="assets/images/banners/banner_2.jpg" alt="Banner" width="200"/>
 </p>
 
 ---
@@ -116,5 +116,5 @@ This project is licensed under the MIT License.
 ---
 
 <p align="center">
-  <img src="assets/logos/t-store-splash-logo-white.png" alt="Ushopia Logo" width="120"/>
+  <img src="assets/logos/ushopia-slash-logo-white.png" alt="Ushopia Logo" width="120"/>
 </p>
