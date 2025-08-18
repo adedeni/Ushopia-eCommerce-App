@@ -5,8 +5,8 @@
 class TImages {
 
   // -- App Logos
-  static const String darkAppLogo = "assets/logos/t-store-splash-logo-black.png";
-  static const String lightAppLogo = "assets/logos/t-store-splash-logo-white.png";
+  static const String darkAppLogo = "assets/logos/ushopia-slash-logo-black.png";
+  static const String lightAppLogo = "assets/logos/ushopia-slash-logo-white.png";
 
   // -- Social Logos
   static const String google = "assets/logos/google-icon.png";
@@ -20,7 +20,7 @@ class TImages {
   static const String animalIcon = "assets/icons/categories/icons8-dog-heart-64.png";
   static const String toyIcon = "assets/icons/categories/icons8-wooden-toy-car-50.png";
   static const String furnitureIcon = "assets/icons/categories/icons8-dining-chair-64.png";
-  static const String jeweleryIcon = "assets/icons/categories/icons8-sparkling-diamond-64.png";
+  static const String jewelryIcon = "assets/icons/categories/icons8-sparkling-diamond-64.png";
   static const String electronicsIcon = "assets/icons/categories/icons8-smartphone-64.png";
 
   // -- Brand Icons
