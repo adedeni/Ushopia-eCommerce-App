@@ -116,5 +116,5 @@ This project is licensed under the MIT License.
 ---
 
 <p align="center">
-  <img src="assets/logos/ushopia-slash-logo-white.png" alt="Ushopia Logo" width="120"/>
+  <img src="assets/logos/ushopia-slash-logo-black.png" alt="Ushopia Logo" width="120"/>
 </p>
