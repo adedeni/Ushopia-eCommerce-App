@@ -1,14 +1,16 @@
 flutter_native_splash:
   color: "#FFFFFF"
   color_dark: "#000000"
-  image: assets/logos/ushopia-slash-logo-black.png
-  image_dark: assets/ushopia-slash-logo-white.png
+  image: assets/logos/ushopia-slash-logo-white.png
+  image_dark: assets\logos\ushopia-slash-logo-black.png
 
   android_12:
     color: "#FFFFFF"
     color_dark: "#000000"
-    image: assets/logos/ushopia-slash-logo-black.png
-    image_dark: assets/logos/ushopia-slash-logo-white.png
+    image: assets/logos/ushopia-slash-logo-white.png
+    image_dark: assets\logos\ushopia-slash-logo-black.png
 
 
   web: false
+  #run this  to update the splash screen ##flutter pub run flutter_native_splash:create --path=splash.yaml
+    #run this  to remove the splash screen ##flutter pub run flutter_native_splash:remove

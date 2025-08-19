@@ -1,4 +1,4 @@
-package com.example.t_store
+package com.example.ushopia
 
 import io.flutter.embedding.android.FlutterActivity
 

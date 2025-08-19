@@ -10,14 +10,14 @@ import 'package:ushopia/utils/theme/widget_themes/text_theme.dart';
 
 import '../constants/colors.dart';
 
-class TAppTheme {
-  TAppTheme._();
+class TAppTheme {//the T in the front is to make it easy to load all custom classes once you type T
+  TAppTheme._(); //this is make the constructor private 
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
     disabledColor: TColors.grey,
-    brightness: Brightness.light,
+    brightness: Brightness.light,//this help the app to know you are using light mode
     primaryColor: TColors.primary,
     textTheme: TTextTheme.lightTextTheme,
     chipTheme: TChipTheme.lightChipTheme,
@@ -34,7 +34,7 @@ class TAppTheme {
     useMaterial3: true,
     fontFamily: 'Poppins',
     disabledColor: TColors.grey,
-    brightness: Brightness.dark,
+    brightness: Brightness.dark,//this help the app to know you are using dark mode
     primaryColor: TColors.primary,
     textTheme: TTextTheme.darkTextTheme,
     chipTheme: TChipTheme.darkChipTheme,

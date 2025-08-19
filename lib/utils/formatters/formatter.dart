@@ -59,8 +59,3 @@ class TFormatter {
 
 }
 
-
-/*
-*
-*
-* */
