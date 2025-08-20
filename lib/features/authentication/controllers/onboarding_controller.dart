@@ -1,27 +1,35 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 class OnboardingController extends GetxController {
   static OnboardingController get instance => Get.find();
 
   /// Variables
-  
-  /// Update Current Index when Page Scroll
-  void updatePageIndicator (index) {
+  final pageController = PageController();
+  Rx<int> currentPageIndex = 0.obs;
 
-  }
+  /// Update Current Index when Page Scroll
+  void updatePageIndicator(index) => currentPageIndex = index;
 
   /// Jump to the specific dot selected page.
-  void dotNavigationClick (index) {
-    
-  }
+  void dotNavigationClick(index) {
+    currentPageIndex.value = index;
+    pageController.jumpTo(index);
+  } 
 
   /// Update Current Index and jump to next page
-  void nextPage () {
-    
+  void nextPage() {
+    if (currentPageIndex.value == 2) {
+     // Get.to(LoginScreen());
+    }else{
+      int page = currentPageIndex.value +1;
+      pageController.jumpToPage(page);
+    }
   }
 
   /// Update Current Index and jump to last page
-  void skipPage () {
-    
+  void skipPage() {
+    currentPageIndex.value = 2;
+    pageController.jumpTo(2);
   }
 }

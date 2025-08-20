@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:ushopia/features/authentication/screens/onboarding_screen.dart';
+import 'package:ushopia/features/authentication/screens/onboarding/onboarding_screen.dart';
 import 'package:ushopia/utils/constants/text_strings.dart';
 import 'package:ushopia/utils/theme/theme.dart';
 
@@ -11,6 +11,7 @@ class App extends StatelessWidget {
   // The URL of your complete product
   static final Uri _productUri = Uri.parse('https://codingwitht.com/ecommerce-app-with-admin-panel/');
 
+  // ignore: unused_element
   Future<void> _launchProductLink() async {
     if (!await launchUrl(_productUri, mode: LaunchMode.externalApplication)) {
       // handle error, e.g. show snackbar
