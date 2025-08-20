@@ -15,7 +15,7 @@ class OnboardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller= Get.put(OnboardingController());
+    final controller = Get.put(OnboardingController());
     return Scaffold(
       body: Stack(children: [
         /// Horizontal scrollable pages
