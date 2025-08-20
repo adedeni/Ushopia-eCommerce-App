@@ -23,6 +23,7 @@ class App extends StatelessWidget {
       theme: TAppTheme.lightTheme,
       //dark theme codes
       darkTheme: TAppTheme.darkTheme,
+      home:const App(),
     );
   }
 }
