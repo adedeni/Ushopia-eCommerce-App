@@ -93,11 +93,16 @@ lib/
   ├── utils/
   │    └── constants/
   │         └── image_strings.dart
+  ├── models/
+  ├── views/
+  ├── controllers/
+  ├── widgets/
   └── ...
 assets/
   ├── images/
   ├── logos/
   ├── icons/
+  ├── fonts/
   └── ...
 ```
 
