@@ -33,8 +33,9 @@
 ## Screenshots
 
 <p align="center">
-  <img src="assets/images/on_boarding_images/sammy-line-shopping.gif" alt="Onboarding" width="200"/>
-  <img src="assets/images/animations/sammy-line-sale.png" alt="Sale Animation" width="200"/>
+  
+  <img src="assets/images/banners/banner_7.jpg" alt="Sale Animation" width="200"/>
+  <img src="assets/images/on_boarding_images/sammy-line-shopping.gif" alt="Banner" width="200"/>
   <img src="assets/images/banners/banner_2.jpg" alt="Banner" width="200"/>
 </p>
 
@@ -79,13 +80,8 @@ flutter run
   <img src="assets/icons/brands/adidas-logo.png" alt="Adidas" width="40"/>
   <img src="assets/icons/brands/apple-logo.png" alt="Apple" width="40"/>
   <img src="assets/icons/payment_methods/visa.png" alt="Visa" width="40"/>
-  <img src="assets/icons/payment_methods/paypal.png" alt="PayPal" width="30"/>
+  <img src="assets/icons/payment_methods/paypal.png" alt="PayPal" width="40"/>
   <img src="assets/icons/payment_methods/master-card.png" alt="MasterCard" width="40"/>
-  <img src="assets/icons/payment_methods/apple-pay.png" alt="Apple Pay" width="70"/>
-  <img src="assets/icons/payment_methods/credit-card.png" alt="Credit Card" width="40"/>
-  <img src="assets/icons/payment_methods/google-pay.png" alt="Google Pay" width="70"/>
-  <img src="assets/icons/payment_methods/paystack.png" alt="Paystack" width="70"/>
-  <img src="assets/icons/payment_methods/paytm.png" alt="Paytm" width="70"/>
 </p>
 
 ---
@@ -162,7 +158,7 @@ assets/
 
 ## Contributing
 
-We welcome contributions! Please open issues or submit pull requests for improvements and bug fixes.
+I welcome contributions! Please open issues or submit pull requests for improvements and bug fixes.
 
 ---
 

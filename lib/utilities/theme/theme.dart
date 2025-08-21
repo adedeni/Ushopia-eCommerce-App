@@ -10,40 +10,40 @@ import 'package:ushopia/utilities/theme/widget_themes/text_theme.dart';
 
 import '../constants/colors.dart';
 
-class TAppTheme {//the T in the front is to make it easy to load all custom classes once you type T
-  TAppTheme._(); //this is make the constructor private 
+class AAppTheme {//the T in the front is to make it easy to load all custom classes once you type T
+  AAppTheme._(); //this is make the constructor private 
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
-    disabledColor: TColors.grey,
+    disabledColor: AColors.grey,
     brightness: Brightness.light,//this help the app to know you are using light mode
-    primaryColor: TColors.primary,
-    textTheme: TTextTheme.lightTextTheme,
-    chipTheme: TChipTheme.lightChipTheme,
-    scaffoldBackgroundColor: TColors.white,
-    appBarTheme: TAppBarTheme.lightAppBarTheme,
-    checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
-    bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
-    elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
-    outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
-    inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
+    primaryColor: AColors.primary,
+    textTheme: ATextTheme.lightTextTheme,
+    chipTheme: AChipTheme.lightChipTheme,
+    scaffoldBackgroundColor: AColors.white,
+    appBarTheme: AAppBarTheme.lightAppBarTheme,
+    checkboxTheme: ACheckboxTheme.lightCheckboxTheme,
+    bottomSheetTheme: ABottomSheetTheme.lightBottomSheetTheme,
+    elevatedButtonTheme: AElevatedButtonTheme.lightElevatedButtonTheme,
+    outlinedButtonTheme: AOutlinedButtonTheme.lightOutlinedButtonTheme,
+    inputDecorationTheme: ATextFormFieldTheme.lightInputDecorationTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
-    disabledColor: TColors.grey,
+    disabledColor: AColors.grey,
     brightness: Brightness.dark,//this help the app to know you are using dark mode
-    primaryColor: TColors.primary,
-    textTheme: TTextTheme.darkTextTheme,
-    chipTheme: TChipTheme.darkChipTheme,
-    scaffoldBackgroundColor: TColors.black,
-    appBarTheme: TAppBarTheme.darkAppBarTheme,
-    checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
-    bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
-    elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
-    outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
-    inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
+    primaryColor: AColors.primary,
+    textTheme: ATextTheme.darkTextTheme,
+    chipTheme: AChipTheme.darkChipTheme,
+    scaffoldBackgroundColor: AColors.black,
+    appBarTheme: AAppBarTheme.darkAppBarTheme,
+    checkboxTheme: ACheckboxTheme.darkCheckboxTheme,
+    bottomSheetTheme: ABottomSheetTheme.darkBottomSheetTheme,
+    elevatedButtonTheme: AElevatedButtonTheme.darkElevatedButtonTheme,
+    outlinedButtonTheme: AOutlinedButtonTheme.darkOutlinedButtonTheme,
+    inputDecorationTheme: ATextFormFieldTheme.darkInputDecorationTheme,
   );
 }

@@ -2,8 +2,8 @@
 /* -- App Image Strings -- */
 
 /// This class contains all the App Images in String formats.
-class TImages {
-TImages._();//private constructors
+class AImages {
+AImages._();//private constructors
   // -- App Logos
   static const String darkAppLogo = "assets/logos/ushopia-slash-logo-black.png";
   static const String lightAppLogo = "assets/logos/ushopia-slash-logo-white.png";

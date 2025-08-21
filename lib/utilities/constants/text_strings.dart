@@ -1,7 +1,7 @@
 
 /// This class contains all the App Text in String formats.
-class TTexts {
-TTexts._();//private constructors
+class ATexts {
+ATexts._();//private constructors
   // -- GLOBAL Texts
   static const String and = "and";
   static const String skip = "Skip";
@@ -63,7 +63,7 @@ TTexts._();//private constructors
 
   // -- Home
   static const String homeAppbarTitle = "Good day for shopping";
-  static const String homeAppbarSubTitle = "Taimoor Sikander";
+  static const String homeAppbarSubTitle = "Adedeni Adeshina";
 
 
 }

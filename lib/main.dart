@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// Make sure this path correctly points to your app.dart file
 import 'package:ushopia/app.dart';
 
 //The App Entry Point

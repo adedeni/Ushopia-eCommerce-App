@@ -11,11 +11,11 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = AHelperFunctions.isDarkMode(context);
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: TSpacingStyle.paddingWithAppBarHeight,
+          padding: ASpacingStyle.paddingWithAppBarHeight,
           child: Column(
             children: [
               ///Logo, title and subtitle
@@ -25,17 +25,18 @@ class LoginScreen extends StatelessWidget {
                   Image(
                     height: 150,
                     image: AssetImage(
-                        dark ? TImages.lightAppLogo : TImages.darkAppLogo),
+                        dark ? AImages.lightAppLogo : AImages.darkAppLogo),
                   ),
-                  Text(TTexts.loginTitle,
+                  Text(ATexts.loginTitle,
                       style: Theme.of(context).textTheme.headlineMedium),
                   const SizedBox(
-                    height: TSizes.sm,
+                    height: ASizes.sm,
                   ),
-                  Text(TTexts.loginSubTitle,
+                  Text(ATexts.loginSubTitle,
                       style: Theme.of(context).textTheme.bodyMedium),
                 ],
               ),
+              const SizedBox(height: ASizes.spaceBtwInputFields / 3),
 
               ///Form
               Form(
@@ -45,17 +46,33 @@ class LoginScreen extends StatelessWidget {
                   TextFormField(
                     decoration: const InputDecoration(
                         prefixIcon: Icon(Iconsax.profile_circle),
-                        labelText: TTexts.email),
+                        labelText: ATexts.email),
                   ),
-                  const SizedBox(height: TSizes.spaceBtwInputFields),
+                  const SizedBox(height: ASizes.spaceBtwInputFields),
 
                   ///Password
                   TextFormField(
                     decoration: const InputDecoration(
-                        prefixIcon: Icon(Iconsax.password_check),
-                        labelText: TTexts.password),
+                      prefixIcon: Icon(Iconsax.password_check),
+                      labelText: ATexts.password,
+                      suffixIcon: Icon(Iconsax.eye_slash),
+                    ),
                   ),
-                  const SizedBox(height: TSizes.spaceBtwInputFields),
+                  const SizedBox(height: ASizes.spaceBtwInputFields / 2),
+                  // Remember me and forget password
+                   Row(
+                    children: [
+                      //Remember me
+                      Row(
+                        children: [
+                          Checkbox(value: true, onChanged: (value){}),
+                          const Text(ATexts.rememberMe)
+                          
+                        ],
+                      )
+                      //Forget password
+                    ],
+                  )
                 ],
               ))
             ],

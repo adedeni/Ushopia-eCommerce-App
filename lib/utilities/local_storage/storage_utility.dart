@@ -1,13 +1,13 @@
 import 'package:get_storage/get_storage.dart';
 
-class TLocalStorage {
-  static final TLocalStorage _instance = TLocalStorage._internal();
+class ALocalStorage {
+  static final ALocalStorage _instance = ALocalStorage._internal();
 
-  factory TLocalStorage() {
+  factory ALocalStorage() {
     return _instance;
   }
 
-  TLocalStorage._internal();
+  ALocalStorage._internal();
 
   final _storage = GetStorage();
 
@@ -38,11 +38,11 @@ class TLocalStorage {
 // LocalStorage localStorage = LocalStorage();
 //
 // // Save data
-// localStorage.saveData('username', 'JohnDoe');
+// localStorage.saveData('username', 'Adedeni');
 //
 // // Read data
 // String? username = localStorage.readData<String>('username');
-// print('Username: $username'); // Output: Username: JohnDoe
+// print('Username: $username'); // Output: Username: Adedeni
 //
 // // Remove data
 // localStorage.removeData('username');

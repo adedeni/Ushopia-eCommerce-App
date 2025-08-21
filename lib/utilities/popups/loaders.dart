@@ -5,7 +5,7 @@ import 'package:iconsax/iconsax.dart';
 import '../constants/colors.dart';
 import '../helpers/helper_functions.dart';
 
-class TLoaders {
+class ALoaders {
   static hideSnackBar() => ScaffoldMessenger.of(Get.context!).hideCurrentSnackBar();
 
   static customToast({required message}) {
@@ -19,7 +19,7 @@ class TLoaders {
           margin: const EdgeInsets.symmetric(horizontal: 30),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(30),
-            color: THelperFunctions.isDarkMode(Get.context!) ? TColors.darkerGrey.withOpacity(0.9) : TColors.grey.withOpacity(0.9),
+            color: AHelperFunctions.isDarkMode(Get.context!) ? AColors.darkerGrey.withOpacity(0.9) : AColors.grey.withOpacity(0.9),
           ),
           child: Center(child: Text(message, style: Theme.of(Get.context!).textTheme.labelLarge)),
         ),
@@ -34,11 +34,11 @@ class TLoaders {
       isDismissible: true,
       shouldIconPulse: true,
       colorText: Colors.white,
-      backgroundColor: TColors.primary,
+      backgroundColor: AColors.primary,
       snackPosition: SnackPosition.BOTTOM,
       duration: Duration(seconds: duration),
       margin: const EdgeInsets.all(10),
-      icon: const Icon(Iconsax.check, color: TColors.white),
+      icon: const Icon(Iconsax.check, color: AColors.white),
     );
   }
 
@@ -48,12 +48,12 @@ class TLoaders {
       message,
       isDismissible: true,
       shouldIconPulse: true,
-      colorText: TColors.white,
+      colorText: AColors.white,
       backgroundColor: Colors.orange,
       snackPosition: SnackPosition.BOTTOM,
       duration: const Duration(seconds: 3),
       margin: const EdgeInsets.all(20),
-      icon: const Icon(Iconsax.warning_2, color: TColors.white),
+      icon: const Icon(Iconsax.warning_2, color: AColors.white),
     );
   }
 
@@ -63,12 +63,12 @@ class TLoaders {
       message,
       isDismissible: true,
       shouldIconPulse: true,
-      colorText: TColors.white,
+      colorText: AColors.white,
       backgroundColor: Colors.red.shade600,
       snackPosition: SnackPosition.BOTTOM,
       duration: const Duration(seconds: 3),
       margin: const EdgeInsets.all(20),
-      icon: const Icon(Iconsax.warning_2, color: TColors.white),
+      icon: const Icon(Iconsax.warning_2, color: AColors.white),
     );
   }
 }

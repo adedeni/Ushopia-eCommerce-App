@@ -2,67 +2,67 @@ import 'package:flutter/material.dart';
 import 'package:ushopia/utilities/constants/colors.dart';
 import '../../constants/sizes.dart';
 
-class TTextFormFieldTheme {
-  TTextFormFieldTheme._();
+class ATextFormFieldTheme {
+  ATextFormFieldTheme._();
 
   static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
-    prefixIconColor: TColors.darkGrey,
-    suffixIconColor: TColors.darkGrey,
+    prefixIconColor: AColors.darkGrey,
+    suffixIconColor: AColors.darkGrey,
     // constraints: const BoxConstraints.expand(height: TSizes.inputFieldHeight),
-    labelStyle: const TextStyle().copyWith(fontSize: TSizes.fontSizeMd, color: TColors.black),
-    hintStyle: const TextStyle().copyWith(fontSize: TSizes.fontSizeSm, color: TColors.black),
+    labelStyle: const TextStyle().copyWith(fontSize: ASizes.fontSizeMd, color: AColors.black),
+    hintStyle: const TextStyle().copyWith(fontSize: ASizes.fontSizeSm, color: AColors.black),
     errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
-    floatingLabelStyle: const TextStyle().copyWith(color: TColors.black.withOpacity(0.8)),
+    floatingLabelStyle: const TextStyle().copyWith(color: AColors.black.withOpacity(0.8)),
     border: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: TColors.grey),
+      borderRadius: BorderRadius.circular(ASizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: AColors.grey),
     ),
     enabledBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: TColors.grey),
+      borderRadius: BorderRadius.circular(ASizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: AColors.grey),
     ),
     focusedBorder:const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: TColors.dark),
+      borderRadius: BorderRadius.circular(ASizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: AColors.dark),
     ),
     errorBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: TColors.warning),
+      borderRadius: BorderRadius.circular(ASizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: AColors.warning),
     ),
     focusedErrorBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 2, color: TColors.warning),
+      borderRadius: BorderRadius.circular(ASizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 2, color: AColors.warning),
     ),
   );
 
   static InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 2,
-    prefixIconColor: TColors.darkGrey,
-    suffixIconColor: TColors.darkGrey,
+    prefixIconColor: AColors.darkGrey,
+    suffixIconColor: AColors.darkGrey,
     // constraints: const BoxConstraints.expand(height: TSizes.inputFieldHeight),
-    labelStyle: const TextStyle().copyWith(fontSize: TSizes.fontSizeMd, color: TColors.white),
-    hintStyle: const TextStyle().copyWith(fontSize: TSizes.fontSizeSm, color: TColors.white),
-    floatingLabelStyle: const TextStyle().copyWith(color: TColors.white.withOpacity(0.8)),
+    labelStyle: const TextStyle().copyWith(fontSize: ASizes.fontSizeMd, color: AColors.white),
+    hintStyle: const TextStyle().copyWith(fontSize: ASizes.fontSizeSm, color: AColors.white),
+    floatingLabelStyle: const TextStyle().copyWith(color: AColors.white.withOpacity(0.8)),
     border: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: TColors.darkGrey),
+      borderRadius: BorderRadius.circular(ASizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: AColors.darkGrey),
     ),
     enabledBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: TColors.darkGrey),
+      borderRadius: BorderRadius.circular(ASizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: AColors.darkGrey),
     ),
     focusedBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: TColors.white),
+      borderRadius: BorderRadius.circular(ASizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: AColors.white),
     ),
     errorBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: TColors.warning),
+      borderRadius: BorderRadius.circular(ASizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: AColors.warning),
     ),
     focusedErrorBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 2, color: TColors.warning),
+      borderRadius: BorderRadius.circular(ASizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 2, color: AColors.warning),
     ),
   );
 }
