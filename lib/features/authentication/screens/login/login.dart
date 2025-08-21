@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:ushopia/common/styles/spacing_style.dart';
-import 'package:ushopia/utils/constants/image_strings.dart';
-import 'package:ushopia/utils/constants/sizes.dart';
-import 'package:ushopia/utils/constants/text_strings.dart';
-import 'package:ushopia/utils/helpers/helper_functions.dart';
+import 'package:ushopia/utilities/constants/image_strings.dart';
+import 'package:ushopia/utilities/constants/sizes.dart';
+import 'package:ushopia/utilities/constants/text_strings.dart';
+import 'package:ushopia/utilities/helpers/helper_functions.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

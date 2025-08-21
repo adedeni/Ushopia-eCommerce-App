@@ -81,6 +81,11 @@ flutter run
   <img src="assets/icons/payment_methods/visa.png" alt="Visa" width="40"/>
   <img src="assets/icons/payment_methods/paypal.png" alt="PayPal" width="40"/>
   <img src="assets/icons/payment_methods/master-card.png" alt="MasterCard" width="40"/>
+  <img src="assets/icons/payment_methods/apple-pay.png" alt="Apple Pay" width="40"/>
+  <img src="assets/icons/payment_methods/credit-card.png" alt="Credit Card" width="40"/>
+  <img src="assets/icons/payment_methods/google-pay.png" alt="Google Pay" width="40"/>
+  <img src="assets/icons/payment_methods/paystack.png" alt="Paystack" width="40"/>
+  <img src="assets/icons/payment_methods/paytm.png" alt="Paytm" width="40"/>
 </p>
 
 ---
@@ -90,20 +95,67 @@ flutter run
 ```
 lib/
   ├── main.dart
-  ├── utils/
-  │    └── constants/
-  │         └── image_strings.dart
-  ├── models/
-  ├── views/
-  ├── controllers/
-  ├── widgets/
+  ├── app.dart
+  ├── navigation_menu.dart
+  ├── bindings/
+  ├── common/
+  │    ├── styles/
+  │    └── widgets/
+  ├── data/
+  │    ├── repositories/
+  │    └── services/
+  ├── features/
+  │    ├── authentication/
+  │    |      ├── controllers/
+  │    |      ├── models/
+  │    |      └── screens/
+  │    |           ├──login/
+  │    |           ├──onboarding/
+  │    |           |     ├──widgets/
+  │    |           |     └──...
+  │    |           └── ...
+  │    ├── personalization/
+  │    |      ├── controllers/
+  │    |      ├── models/
+  │    |      └── screens/
+  │    ├── shop/
+  │    |      ├── controllers/
+  │    |      ├── models/
+  │    |      └── screens/
+  │    └── ...
+  ├── localization/
+  │    └── ...
+  ├── utilities/
+  │    ├── constants/
+  │    ├── device/
+  │    ├── exceptions/
+  │    ├── formatters/
+  │    ├── helpers/
+  │    ├── http/
+  │    ├── loaders/
+  │    ├── local_storage/
+  │    ├── logging/
+  │    ├── popups/
+  │    ├── theme/
+  │    |    ├── widgets/
+  │    |    └── ...
+  │    ├── validators/
+  │    └── ...
   └── ...
 assets/
-  ├── images/
-  ├── logos/
   ├── icons/
-  ├── fonts/
-  └── ...
+  │    ├── brands/
+  │    ├── categories/
+  │    └── payment_methods/
+  ├── images/
+  │    ├── animations/
+  │    ├── banners/
+  │    ├── content/
+  │    ├── on_boarding_images/
+  │    ├── products/
+  │    └── reviews/
+  ├── logos/
+  └── fonts/
 ```
 
 ---

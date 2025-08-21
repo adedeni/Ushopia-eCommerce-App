@@ -6,9 +6,9 @@ import 'package:ushopia/features/authentication/screens/onboarding/widgets/onboa
 import 'package:ushopia/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
 import 'package:ushopia/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
 import 'package:ushopia/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
-import 'package:ushopia/utils/constants/image_strings.dart';
+import 'package:ushopia/utilities/constants/image_strings.dart';
 
-import 'package:ushopia/utils/constants/text_strings.dart';
+import 'package:ushopia/utilities/constants/text_strings.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});

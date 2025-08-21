@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:ushopia/features/authentication/controllers/onboarding_controller.dart';
-import 'package:ushopia/utils/constants/colors.dart';
-import 'package:ushopia/utils/constants/sizes.dart';
-import 'package:ushopia/utils/device/device_utility.dart';
-import 'package:ushopia/utils/helpers/helper_functions.dart';
+import 'package:ushopia/utilities/constants/colors.dart';
+import 'package:ushopia/utilities/constants/sizes.dart';
+import 'package:ushopia/utilities/device/device_utility.dart';
+import 'package:ushopia/utilities/helpers/helper_functions.dart';
 
 class OnboardingNextButton extends StatelessWidget {
   const OnboardingNextButton({

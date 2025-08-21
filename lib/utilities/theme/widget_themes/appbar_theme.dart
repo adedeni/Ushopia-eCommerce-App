@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/utils/constants/sizes.dart';
+import 'package:ushopia/utilities/constants/sizes.dart';
 import '../../constants/colors.dart';
 
 class TAppBarTheme{

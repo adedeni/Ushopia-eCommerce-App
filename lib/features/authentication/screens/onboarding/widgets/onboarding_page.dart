@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/utils/constants/sizes.dart';
-import 'package:ushopia/utils/helpers/helper_functions.dart';
+import 'package:ushopia/utilities/constants/sizes.dart';
+import 'package:ushopia/utilities/helpers/helper_functions.dart';
 
 class OnBoardingPage extends StatelessWidget {
   const OnBoardingPage({

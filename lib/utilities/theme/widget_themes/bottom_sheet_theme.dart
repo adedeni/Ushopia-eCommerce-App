@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/utils/constants/colors.dart';
+import 'package:ushopia/utilities/constants/colors.dart';
 
 class TBottomSheetTheme {
   TBottomSheetTheme._();

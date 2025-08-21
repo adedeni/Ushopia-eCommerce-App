@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:ushopia/features/authentication/screens/onboarding/onboarding_screen.dart';
-import 'package:ushopia/utils/constants/text_strings.dart';
-import 'package:ushopia/utils/theme/theme.dart';
+import 'package:ushopia/utilities/constants/text_strings.dart';
+import 'package:ushopia/utilities/theme/theme.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
 
-  // The URL of your complete product
-  static final Uri _productUri = Uri.parse('https://codingwitht.com/ecommerce-app-with-admin-panel/');
+  // The URL of your complete product or portfolio
+  static final Uri _productUri = Uri.parse('https://adedeni.com');
 
   // ignore: unused_element
   Future<void> _launchProductLink() async {
