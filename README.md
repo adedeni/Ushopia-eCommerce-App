@@ -81,11 +81,11 @@ flutter run
   <img src="assets/icons/payment_methods/visa.png" alt="Visa" width="40"/>
   <img src="assets/icons/payment_methods/paypal.png" alt="PayPal" width="40"/>
   <img src="assets/icons/payment_methods/master-card.png" alt="MasterCard" width="40"/>
-  <img src="assets/icons/payment_methods/apple-pay.png" alt="Apple Pay" width="100"/>
-  <img src="assets/icons/payment_methods/credit-card.png" alt="Credit Card" width="100"/>
-  <img src="assets/icons/payment_methods/google-pay.png" alt="Google Pay" width="100"/>
-  <img src="assets/icons/payment_methods/paystack.png" alt="Paystack" width="100"/>
-  <img src="assets/icons/payment_methods/paytm.png" alt="Paytm" width="100"/>
+  <img src="assets/icons/payment_methods/apple-pay.png" alt="Apple Pay" width="70"/>
+  <img src="assets/icons/payment_methods/credit-card.png" alt="Credit Card" width="70"/>
+  <img src="assets/icons/payment_methods/google-pay.png" alt="Google Pay" width="70"/>
+  <img src="assets/icons/payment_methods/paystack.png" alt="Paystack" width="70"/>
+  <img src="assets/icons/payment_methods/paytm.png" alt="Paytm" width="70"/>
 </p>
 
 ---
