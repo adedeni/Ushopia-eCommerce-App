@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/utilities/constants/colors.dart';
+import 'package:ushopia/features/authentication/screens/signup/widgets/terms_condition_checkbox.dart';
 import 'package:ushopia/utilities/constants/sizes.dart';
 import 'package:ushopia/utilities/constants/text_strings.dart';
 
 class ASignupForm extends StatelessWidget {
   const ASignupForm({
     super.key,
-    required this.dark,
+  
   });
 
-  final bool dark;
+
 
   @override
   Widget build(BuildContext context) {
+    
     return Form(
       child: Column(
         children: [
@@ -98,73 +99,7 @@ class ASignupForm extends StatelessWidget {
           ),
     
           ///Terms and conditions
-          Row(
-            children: [
-              SizedBox(
-                width: 24,
-                height: 24,
-                child: Checkbox(
-                  value: true,
-                  onChanged: (value) {},
-                ),
-              ),
-              const SizedBox(
-                width: ASizes.spaceBtwItems,
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text.rich(
-                    TextSpan(
-                      children: [
-                        TextSpan(
-                          text: '${ATexts.iAgreeTo} ',
-                          style:
-                              Theme.of(context).textTheme.bodySmall,
-                        ),
-                        TextSpan(
-                          text: ATexts.privacyPolicy,
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium!
-                              .apply(
-                                color: dark
-                                    ? AColors.white
-                                    : AColors.primary,
-                                decoration: TextDecoration.underline,
-                                decorationColor: dark
-                                    ? AColors.white
-                                    : AColors.primary,
-                              ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Text.rich(TextSpan(children: [
-                    TextSpan(
-                      text: ' ${ATexts.and} ',
-                      style: Theme.of(context).textTheme.bodySmall,
-                    ),
-                    TextSpan(
-                      text: ATexts.termsOfUse,
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodyMedium!
-                          .apply(
-                            color: dark
-                                ? AColors.white
-                                : AColors.primary,
-                            decoration: TextDecoration.underline,
-                            decorationColor: dark
-                                ? AColors.white
-                                : AColors.primary,
-                          ),
-                    ),
-                  ]))
-                ],
-              ),
-            ],
-          ),
+          const ATermAndConditionCheckbox(),
           const SizedBox(height: ASizes.spaceBtwSections,),
           ///Sign Up Button
           SizedBox(
@@ -179,3 +114,4 @@ class ASignupForm extends StatelessWidget {
     );
   }
 }
+

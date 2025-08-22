@@ -7,14 +7,13 @@ import 'package:ushopia/features/authentication/screens/login/widgets/login_head
 import 'package:ushopia/common/widgets/login_signup/social_buttons.dart';
 import 'package:ushopia/utilities/constants/sizes.dart';
 import 'package:ushopia/utilities/constants/text_strings.dart';
-import 'package:ushopia/utilities/helpers/helper_functions.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final dark = AHelperFunctions.isDarkMode(context);
+    
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
@@ -22,7 +21,7 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             children: [
               ///Logo, title and subtitle
-              ALoginHeader(dark: dark),
+              const ALoginHeader(),
 
               ///Form
               const ALoginForm(),

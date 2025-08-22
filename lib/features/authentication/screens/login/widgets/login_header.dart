@@ -2,17 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:ushopia/utilities/constants/image_strings.dart';
 import 'package:ushopia/utilities/constants/sizes.dart';
 import 'package:ushopia/utilities/constants/text_strings.dart';
+import 'package:ushopia/utilities/helpers/helper_functions.dart';
 
 class ALoginHeader extends StatelessWidget {
   const ALoginHeader({
     super.key,
-    required this.dark,
+    
   });
 
-  final bool dark;
+  
 
   @override
   Widget build(BuildContext context) {
+    final dark = AHelperFunctions.isDarkMode(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

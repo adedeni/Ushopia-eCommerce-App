@@ -5,14 +5,12 @@ import 'package:ushopia/common/widgets/login_signup/social_buttons.dart';
 import 'package:ushopia/features/authentication/screens/signup/widgets/signup_form.dart';
 import 'package:ushopia/utilities/constants/sizes.dart';
 import 'package:ushopia/utilities/constants/text_strings.dart';
-import 'package:ushopia/utilities/helpers/helper_functions.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final dark = AHelperFunctions.isDarkMode(context);
     return Scaffold(
       appBar: AppBar(),
       body: SingleChildScrollView(
@@ -30,7 +28,7 @@ class SignupScreen extends StatelessWidget {
                 height: ASizes.spaceBtwSections,
               ),
               //Form
-              ASignupForm(dark: dark),
+              const ASignupForm(),
               const SizedBox(
                 height: ASizes.spaceBtwSections,
               ),
@@ -48,4 +46,3 @@ class SignupScreen extends StatelessWidget {
     );
   }
 }
-
