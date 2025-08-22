@@ -73,7 +73,7 @@ class ResetPassword extends StatelessWidget {
                 width: double.infinity,
                 child: TextButton(
                   onPressed: () => Get.to(
-                    () => const ResetPassword(),
+                    () => const ResetPasswordf(),
                   ),
                   child: const Text(ATexts.resendEmail),
                 ),
