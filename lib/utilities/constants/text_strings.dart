@@ -8,7 +8,7 @@ ATexts._();//private constructors
   static const String done = "Done";
   static const String submit = "Submit";
   static const String appName = "T-Store";
-  static const String tContinue = "Continue";
+  static const String aContinue = "Continue";
 
 
   // -- OnBoarding Texts

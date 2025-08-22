@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:ushopia/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:ushopia/features/authentication/screens/signup/signup.dart';
 import 'package:ushopia/utilities/constants/sizes.dart';
 import 'package:ushopia/utilities/constants/text_strings.dart';
@@ -47,7 +48,9 @@ class ALoginForm extends StatelessWidget {
                 ),
                 //Forget password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(
+                    () => const ForgetPassword(),
+                  ),
                   child: const Text(ATexts.forgetPassword),
                 )
               ],

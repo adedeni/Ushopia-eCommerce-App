@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:ushopia/features/authentication/screens/signup/verify_email.dart';
 import 'package:ushopia/features/authentication/screens/signup/widgets/terms_condition_checkbox.dart';
 import 'package:ushopia/utilities/constants/sizes.dart';
 import 'package:ushopia/utilities/constants/text_strings.dart';
@@ -105,7 +107,11 @@ class ASignupForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(
+                  () { 
+                    return const VerifyEmailScreen();
+                  },
+                ),
               child: const Text(ATexts.createAccount),
             ),
           )
