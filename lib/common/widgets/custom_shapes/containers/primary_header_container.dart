@@ -15,31 +15,34 @@ class APrimaryHeaderContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ACurveEdgesWidget(
-      child: Container(
-        color: AColors.primary,
-        padding: const EdgeInsets.only(bottom: 0),
-
-        ///If [size.isFinite: is not true.in Stock] error occurred;
-        child: Stack(
-          children: [
-            //Background Custom Shapes
-            Positioned(
-              top: -150,
-              right: -250,
-              child: ACircularContainer(
-                backgroundColor: AColors.textWhite.withOpacity(0.1),
+      child: SizedBox(
+        height: 400,
+        child: Container(
+          color: AColors.primary,
+          padding: const EdgeInsets.only(bottom: 0),
+        
+          ///If [size.isFinite: is not true.in Stock] error occurred;
+          child: Stack(
+            children: [
+              //Background Custom Shapes
+              Positioned(
+                top: -150,
+                right: -250,
+                child: ACircularContainer(
+                  backgroundColor: AColors.textWhite.withOpacity(0.1),
+                ),
               ),
-            ),
-            Positioned(
-              top: 100,
-              right: -300,
-              child: ACircularContainer(
-                backgroundColor: AColors.textWhite.withOpacity(0.1),
+              Positioned(
+                top: 100,
+                right: -300,
+                child: ACircularContainer(
+                  backgroundColor: AColors.textWhite.withOpacity(0.1),
+                ),
               ),
-            ),
-            child,
-            
-          ],
+              child,
+              
+            ],
+          ),
         ),
       ),
     );
