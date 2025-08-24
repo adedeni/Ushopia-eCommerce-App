@@ -1,3 +1,5 @@
+// ignore_for_file: strict_top_level_inference
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -6,9 +8,10 @@ import '../constants/colors.dart';
 import '../helpers/helper_functions.dart';
 
 class ALoaders {
-  static hideSnackBar() => ScaffoldMessenger.of(Get.context!).hideCurrentSnackBar();
+  static void hideSnackBar() => ScaffoldMessenger.of(Get.context!).hideCurrentSnackBar();
 
-  static customToast({required message}) {
+
+  static void customToast({required message}) {
     ScaffoldMessenger.of(Get.context!).showSnackBar(
       SnackBar(
         elevation: 0,
@@ -27,7 +30,7 @@ class ALoaders {
     );
   }
 
-  static successSnackBar({required title, message = '', duration = 3}) {
+  static void successSnackBar({required title, message = '', duration = 3}) {
     Get.snackbar(
       title,
       message,

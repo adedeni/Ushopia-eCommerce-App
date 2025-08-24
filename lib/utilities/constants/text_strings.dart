@@ -9,7 +9,7 @@ ATexts._();//private constructors
   static const String submit = "Submit";
   static const String appName = "T-Store";
   static const String aContinue = "Continue";
-  static const String searchButton = "Search in store";
+  static const String searchContainerText = "Search in store";
 
 
   // -- OnBoarding Texts

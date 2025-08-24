@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class ASectionHeading extends StatelessWidget {
   const ASectionHeading({
     super.key,
@@ -10,7 +11,7 @@ class ASectionHeading extends StatelessWidget {
     this.onPressed,
   });
 
-  final Color? textColor;
+  final Color ? textColor;
   final bool showActionButton;
   final String title, buttonTitle;
   final void Function()? onPressed;
@@ -26,6 +27,7 @@ class ASectionHeading extends StatelessWidget {
               .headlineSmall!
               .apply(color: textColor),
           maxLines: 1,
+          
           overflow: TextOverflow.ellipsis,
         ),
         if (showActionButton)
