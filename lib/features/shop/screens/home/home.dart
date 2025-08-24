@@ -1,17 +1,11 @@
-// ignore_for_file: unused_import
 
-import 'package:carousel_slider/carousel_slider.dart';
+
 import 'package:flutter/material.dart';
-import '/common/widgets/custom_shapes/containers/circular_container.dart';
 import '/utilities/constants/colors.dart';
-import '/utilities/constants/image_strings.dart';
 import '/utilities/constants/sizes.dart';
 import '/utilities/constants/text_strings.dart';
-import '/utilities/helpers/helper_functions.dart';
 import '/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '/common/widgets/custom_shapes/containers/search_containers.dart';
-import '/common/widgets/image_text_widgets/vertical_image_text.dart';
-import '/common/widgets/images/rounded_border_image.dart';
 import '/common/widgets/texts/section_heading.dart';
 import 'widgets/home_appbar.dart';
 import 'widgets/home_categories.dart';
