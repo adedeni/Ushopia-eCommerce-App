@@ -1,6 +1,7 @@
-
-
 import 'package:flutter/material.dart';
+import 'package:ushopia/utilities/constants/image_strings.dart';
+import '../../../../common/widgets/layouts/grid_layout.dart';
+import '../../../../common/widgets/products/products_cards/products_card_vertical.dart';
 import '/utilities/constants/colors.dart';
 import '/utilities/constants/sizes.dart';
 import '/utilities/constants/text_strings.dart';
@@ -9,7 +10,7 @@ import '/common/widgets/custom_shapes/containers/search_containers.dart';
 import '/common/widgets/texts/section_heading.dart';
 import 'widgets/home_appbar.dart';
 import 'widgets/home_categories.dart';
-import 'widgets/promo_banner.dart';
+import 'widgets/promo_slider.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -64,7 +65,35 @@ class Home extends StatelessWidget {
             ///Home Screen Body
             Padding(
               padding: const EdgeInsets.all(ASizes.defaultSpace),
-              child: APromoBanner(),
+              child: Column(
+                children: [
+                  //Home Promo Slider
+                  APromoSlider(
+                    banners: [
+                      AImages.promoBanner1,
+                      AImages.promoBanner2,
+                      AImages.promoBanner3,
+                    ],
+                  ),
+                  const SizedBox(
+                    height: ASizes.spaceBtwSections,
+                  ),
+
+                  ///Category Heading
+                   ASectionHeading(title: 'Popular Products',onPressed: () {},),
+                  const SizedBox(
+                    height: ASizes.spaceBtwItems,
+                  ),
+
+                  ///Popular product grid
+                  AGridLayout(
+                    itemCount: 6,
+                    itemBuilder: (BuildContext p1, int p2) {
+                      return AProductsCardVertical();
+                    },
+                  ),
+                ],
+              ),
             )
           ],
         ),
@@ -72,4 +101,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-
