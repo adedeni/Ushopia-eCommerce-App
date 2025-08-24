@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../common/widgets/image_text_widgets/vertical_image_text.dart';
-import '../../../../../utilities/constants/image_strings.dart';
+import '/../common/widgets/image_text_widgets/vertical_image_text.dart';
+import '/../utilities/constants/image_strings.dart';
 
 class AHomeCategories extends StatelessWidget {
   const AHomeCategories({

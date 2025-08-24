@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/utilities/constants/colors.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
-import 'package:ushopia/utilities/constants/text_strings.dart';
-import 'package:ushopia/utilities/helpers/helper_functions.dart';
+import '/utilities/constants/colors.dart';
+import '/utilities/constants/sizes.dart';
+import '/utilities/constants/text_strings.dart';
+import '/utilities/helpers/helper_functions.dart';
 
 class ATermAndConditionCheckbox extends StatelessWidget {
   const ATermAndConditionCheckbox({

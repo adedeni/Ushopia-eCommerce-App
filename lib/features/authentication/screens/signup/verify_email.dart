@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ushopia/features/authentication/screens/login/login.dart';
-import 'package:ushopia/utilities/constants/image_strings.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
-import 'package:ushopia/utilities/constants/text_strings.dart';
-import 'package:ushopia/utilities/helpers/helper_functions.dart';
+import '/features/authentication/screens/login/login.dart';
+import '/utilities/constants/image_strings.dart';
+import '/utilities/constants/sizes.dart';
+import '/utilities/constants/text_strings.dart';
+import '/utilities/helpers/helper_functions.dart';
 
-import '../../../../common/widgets/success_screen/success_screen.dart';
+import '/common/widgets/success_screen/success_screen.dart';
 
 class VerifyEmailScreen extends StatelessWidget {
   const VerifyEmailScreen({super.key});

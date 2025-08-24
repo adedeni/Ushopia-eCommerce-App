@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/utilities/constants/colors.dart';
-import 'package:ushopia/utilities/constants/image_strings.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/utilities/constants/colors.dart';
+import '/utilities/constants/image_strings.dart';
+import '/utilities/constants/sizes.dart';
 
 class ASocialButtons extends StatelessWidget {
   const ASocialButtons({

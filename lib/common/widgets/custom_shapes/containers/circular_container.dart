@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../utilities/constants/colors.dart';
+import '/utilities/constants/colors.dart';
 
 class ACircularContainer extends StatelessWidget {
   const ACircularContainer({

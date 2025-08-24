@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/features/shop/screens/home/home.dart';
-import 'package:ushopia/utilities/constants/colors.dart';
-import 'package:ushopia/utilities/helpers/helper_functions.dart';
+import '/features/shop/screens/home/home.dart';
+import '/utilities/constants/colors.dart';
+import '/utilities/helpers/helper_functions.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});

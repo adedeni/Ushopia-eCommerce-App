@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/features/authentication/controllers/onboarding_controller.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
-import 'package:ushopia/utilities/device/device_utility.dart';
+import '/features/authentication/controllers/onboarding_controller.dart';
+import '/utilities/constants/sizes.dart';
+import '/utilities/device/device_utility.dart';
 
 class OnBoardingSkip extends StatelessWidget {
   const OnBoardingSkip({

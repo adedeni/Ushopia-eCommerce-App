@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/features/authentication/screens/password_configuration/reset_password.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
-import 'package:ushopia/utilities/constants/text_strings.dart';
+import '/features/authentication/screens/password_configuration/reset_password.dart';
+import '/utilities/constants/sizes.dart';
+import '/utilities/constants/text_strings.dart';
 
 class ForgetPassword extends StatelessWidget {
   const ForgetPassword({super.key});

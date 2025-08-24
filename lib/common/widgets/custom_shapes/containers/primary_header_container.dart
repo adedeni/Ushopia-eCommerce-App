@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/common/widgets/custom_shapes/containers/circular_container.dart';
+import '/common/widgets/custom_shapes/containers/circular_container.dart';
 
-import '../../../../utilities/constants/colors.dart';
+import '/utilities/constants/colors.dart';
 import '../curve_edges/curve_edges_widget.dart';
 
 class APrimaryHeaderContainer extends StatelessWidget {

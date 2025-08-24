@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/utilities/constants/sizes.dart';
 
 class ASpacingStyle {
   static const EdgeInsetsGeometry paddingWithAppBarHeight = EdgeInsets.only(

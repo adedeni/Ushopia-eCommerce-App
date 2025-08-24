@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
-import 'package:ushopia/utilities/device/device_utility.dart';
+import '/utilities/constants/sizes.dart';
+import '/utilities/device/device_utility.dart';
 
 class AAppBar extends StatelessWidget implements PreferredSizeWidget {
   const AAppBar(

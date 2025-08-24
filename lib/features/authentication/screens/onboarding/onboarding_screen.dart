@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/get_instance.dart';
-import 'package:ushopia/features/authentication/controllers/onboarding_controller.dart';
-import 'package:ushopia/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
-import 'package:ushopia/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
-import 'package:ushopia/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
-import 'package:ushopia/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
-import 'package:ushopia/utilities/constants/image_strings.dart';
+import '/features/authentication/controllers/onboarding_controller.dart';
+import '/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
+import '/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
+import '/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
+import '/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
+import '/utilities/constants/image_strings.dart';
 
-import 'package:ushopia/utilities/constants/text_strings.dart';
+import '/utilities/constants/text_strings.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});

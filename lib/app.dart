@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:ushopia/features/authentication/screens/onboarding/onboarding_screen.dart';
-import 'package:ushopia/utilities/constants/text_strings.dart';
-import 'package:ushopia/utilities/theme/theme.dart';
+import '/features/authentication/screens/onboarding/onboarding_screen.dart';
+import '/utilities/constants/text_strings.dart';
+import '/utilities/theme/theme.dart';
 
 class App extends StatelessWidget {
   const App({super.key});

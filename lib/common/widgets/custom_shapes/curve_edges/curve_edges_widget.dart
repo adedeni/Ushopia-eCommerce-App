@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/common/widgets/custom_shapes/curve_edges/curve_edges.dart';
+import '/common/widgets/custom_shapes/curve_edges/curve_edges.dart';
 
 class ACurveEdgesWidget extends StatelessWidget {
   const ACurveEdgesWidget({

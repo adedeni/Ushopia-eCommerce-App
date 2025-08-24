@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/app.dart';
+import '/app.dart';
 
 //The App Entry Point
 void main() {

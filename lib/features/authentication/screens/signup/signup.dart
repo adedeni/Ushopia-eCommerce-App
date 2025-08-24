@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ushopia/common/widgets/login_signup/form_divider.dart';
-import 'package:ushopia/common/widgets/login_signup/social_buttons.dart';
-import 'package:ushopia/features/authentication/screens/signup/widgets/signup_form.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
-import 'package:ushopia/utilities/constants/text_strings.dart';
+import '/common/widgets/login_signup/form_divider.dart';
+import '/common/widgets/login_signup/social_buttons.dart';
+import '/features/authentication/screens/signup/widgets/signup_form.dart';
+import '/utilities/constants/sizes.dart';
+import '/utilities/constants/text_strings.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});

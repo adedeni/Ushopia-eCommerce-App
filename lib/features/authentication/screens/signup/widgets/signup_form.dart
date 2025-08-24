@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/features/authentication/screens/signup/verify_email.dart';
-import 'package:ushopia/features/authentication/screens/signup/widgets/terms_condition_checkbox.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
-import 'package:ushopia/utilities/constants/text_strings.dart';
+import '/features/authentication/screens/signup/verify_email.dart';
+import '/features/authentication/screens/signup/widgets/terms_condition_checkbox.dart';
+import '/utilities/constants/sizes.dart';
+import '/utilities/constants/text_strings.dart';
 
 class ASignupForm extends StatelessWidget {
   const ASignupForm({
