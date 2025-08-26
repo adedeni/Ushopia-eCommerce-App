@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:ushopia/utilities/helpers/helper_functions.dart';
 
 import '/utilities/constants/colors.dart';
 
@@ -7,12 +8,16 @@ class ACartCounterIcon extends StatelessWidget {
   const ACartCounterIcon({
     super.key,
     required this.onPressed,
-    required this.iconColor,
+    this.iconColor,
   });
+
   final VoidCallback onPressed;
-  final Color iconColor;
+  final Color? iconColor;
+
   @override
   Widget build(BuildContext context) {
+
+    final darkMode = AHelperFunctions.isDarkMode(context);
     return Stack(
       children: [
         IconButton(
@@ -28,7 +33,8 @@ class ACartCounterIcon extends StatelessWidget {
             width: 18,
             height: 18,
             decoration: BoxDecoration(
-                color: AColors.black.withOpacity(0.5),
+                color: darkMode ? AColors.white.withOpacity(0.5) : AColors.black.withOpacity(0.5),
+             
                 borderRadius: BorderRadius.circular(100)),
             child: Center(
               child: Text(

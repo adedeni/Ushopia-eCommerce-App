@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import '/features/shop/screens/home/home.dart';
 import '/utilities/constants/colors.dart';
 import '/utilities/helpers/helper_functions.dart';
+import 'features/shop/screens/store/store.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
@@ -41,10 +42,8 @@ class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
   final screens = [
-    const Home(),
-    Container(
-      color: Colors.redAccent,
-    ),
+    Home(),
+    Store(),
     Container(
       color: Colors.orangeAccent,
     ),
