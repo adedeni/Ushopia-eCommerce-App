@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/utilities/constants/colors.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/utilities/constants/colors.dart';
+import '/utilities/constants/sizes.dart';
 
 class ARoundedContainer extends StatelessWidget {
   const ARoundedContainer(

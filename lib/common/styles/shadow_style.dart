@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/utilities/constants/colors.dart';
+import '/utilities/constants/colors.dart';
 
 class AShadowStyle {
   static final verticalProductShadow = BoxShadow(

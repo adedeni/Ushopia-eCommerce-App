@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/utilities/helpers/helper_functions.dart';
+import '/utilities/helpers/helper_functions.dart';
 
 import '/utilities/constants/colors.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/utilities/constants/image_strings.dart';
+import '/utilities/constants/image_strings.dart';
 import '../../../../common/widgets/layouts/grid_layout.dart';
 import '../../../../common/widgets/products/products_cards/products_card_vertical.dart';
 import '/utilities/constants/colors.dart';
@@ -12,8 +12,8 @@ import 'widgets/home_appbar.dart';
 import 'widgets/home_categories.dart';
 import 'widgets/promo_slider.dart';
 
-class Home extends StatelessWidget {
-  const Home({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

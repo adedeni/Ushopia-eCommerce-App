@@ -7,9 +7,14 @@ import '../../../utilities/helpers/helper_functions.dart';
 import '../../styles/spacing_style.dart';
 
 class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({super.key, required this.image, required this.title, required this.subtitle,  this.onPressed});
+  const SuccessScreen(
+      {super.key,
+      required this.image,
+      required this.title,
+      required this.subtitle,
+      this.onPressed});
   final String image, title, subtitle;
-  final  VoidCallback ? onPressed;
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +26,7 @@ class SuccessScreen extends StatelessWidget {
             children: [
               ///Image
               Image(
-                image:  AssetImage(
-                  image
-                ),
+                image: AssetImage(image),
                 width: AHelperFunctions.screenWidth() * 0.6,
               ),
               const SizedBox(
@@ -39,7 +42,7 @@ class SuccessScreen extends StatelessWidget {
               const SizedBox(
                 height: ASizes.spaceBtwItems,
               ),
-              
+
               Text(
                 subtitle,
                 style: Theme.of(context).textTheme.labelMedium,
@@ -48,15 +51,15 @@ class SuccessScreen extends StatelessWidget {
               const SizedBox(
                 height: ASizes.spaceBtwSections,
               ),
+
               ///Buttons
               SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: onPressed,
-                    child: const Text(ATexts.aContinue),
-                  ),
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: onPressed,
+                  child: const Text(ATexts.aContinue),
                 ),
-                
+              ),
             ],
           ),
         ),
