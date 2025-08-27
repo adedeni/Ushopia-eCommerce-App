@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/common/widgets/appbar/appbar.dart';
-import 'package:ushopia/common/widgets/custom_shapes/containers/rounded_container.dart';
-import 'package:ushopia/common/widgets/custom_shapes/containers/search_containers.dart';
-import 'package:ushopia/common/widgets/products/cart/cart_menu_icon.dart';
-import 'package:ushopia/common/widgets/texts/section_heading.dart';
-import 'package:ushopia/utilities/constants/colors.dart';
+import 'package:ushopia/common/widgets/layouts/grid_layout.dart';
+import 'package:ushopia/common/widgets/texts/brand_title_text_with_verified_icon.dart';
+import 'package:ushopia/utilities/constants/enums.dart';
 import 'package:ushopia/utilities/constants/image_strings.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
-import 'package:ushopia/utilities/helpers/helper_functions.dart';
+import '/common/widgets/appbar/appbar.dart';
+import '/common/widgets/custom_shapes/containers/rounded_container.dart';
+import '/common/widgets/custom_shapes/containers/search_containers.dart';
+import '/common/widgets/products/cart/cart_menu_icon.dart';
+import '/common/widgets/texts/section_heading.dart';
+import '/utilities/constants/colors.dart';
+import '/utilities/constants/sizes.dart';
+import '/utilities/helpers/helper_functions.dart';
+import '../../../../common/widgets/images/circular_image.dart';
 
 class Store extends StatelessWidget {
   const Store({super.key});
@@ -35,9 +39,7 @@ class Store extends StatelessWidget {
               automaticallyImplyLeading: false,
               pinned: true,
               floating: true,
-              backgroundColor: AHelperFunctions.isDarkMode(context)
-                  ? AColors.black
-                  : AColors.white,
+              backgroundColor: darkMode ? AColors.black : AColors.white,
               expandedHeight: 440,
               flexibleSpace: Padding(
                 padding: EdgeInsetsGeometry.all(ASizes.defaultSpace),
@@ -64,21 +66,65 @@ class Store extends StatelessWidget {
                       onPressed: () {},
                     ),
                     SizedBox(
-                      height: ASizes.spaceBtwItems / 2,
+                      height: ASizes.spaceBtwItems / 1.5,
                     ),
 
                     //Custom Brands
-                    ARoundedContainer(
-                      padding: EdgeInsets.all(ASizes.sm),
-                      showBorder: true,
-                      backgroundColor: Colors.transparent,
-                      child: Row(
-                        children: [
-                          /// Icon
-                          CircularImage(darkMode: darkMode)
-                        ],
-                      ),
-                    )
+                    AGridLayout(
+                        itemCount: 4,
+                        mainAxisExtent: 80,
+                        itemBuilder: (_, index) {
+                          return GestureDetector(
+                            onTap: () {},
+                            child: ARoundedContainer(
+                              padding: EdgeInsets.all(ASizes.sm),
+                              showBorder: true,
+                              backgroundColor: Colors.transparent,
+                              child: Row(
+                                children: [
+
+                                  /// Icon
+                                  Flexible(
+                                    child: ACircularImage(
+                                      isNetworkImage:
+                                          false, //Change this when you start getting image from backend
+                                      image: AImages.clothIcon,
+                                      backgroundColor: Colors.transparent,
+                                      overlayColor: darkMode
+                                          ? AColors.white
+                                          : AColors.black,
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    width: ASizes.spaceBtwItems / 2,
+                                  ),
+
+                                  ///Text
+                                  Expanded(//flexible can also be applied here
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        ABrandTitleTextWithVerifyIcon(
+                                          title: 'Nike',
+                                          brandTextSIze: TextSizes.large,
+                                        ),
+                                        Text(
+                                          '256 Products',
+                                          overflow: TextOverflow.ellipsis,
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .labelMedium,
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          );
+                        }),
                   ],
                 ),
               ),
@@ -86,32 +132,6 @@ class Store extends StatelessWidget {
           ];
         },
         body: Container(),
-      ),
-    );
-  }
-}
-
-class CircularImage extends StatelessWidget {
-  const CircularImage({
-    super.key,
-    required this.darkMode,
-  });
-
-  final bool darkMode;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 56,
-      height: 56,
-      padding: EdgeInsets.all(ASizes.sm),
-      decoration: BoxDecoration(
-        color: darkMode ? AColors.black : AColors.white,
-        borderRadius: BorderRadius.circular(100),
-      ),
-      child: Image(
-        image: const AssetImage(AImages.clothIcon),
-        color: darkMode ? AColors.black : AColors.white,
       ),
     );
   }

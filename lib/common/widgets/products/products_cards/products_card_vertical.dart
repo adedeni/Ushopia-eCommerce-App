@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-
+import '../../texts/brand_title_text_with_verified_icon.dart';
 import '../../texts/product_price_text.dart';
 import '../../texts/product_title_text.dart';
 import '/common/widgets/images/rounded_border_image.dart';
@@ -97,23 +97,8 @@ class AProductsCardVertical extends StatelessWidget {
                   ),
 
                   ///Brands Name with verification badge
-                  Row(
-                    children: [
-                      Text(
-                        'Nike',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      SizedBox(
-                        width: ASizes.xs,
-                      ),
-                      Icon(
-                        Iconsax.verify5,
-                        color: AColors.primary,
-                        size: ASizes.iconXs,
-                      )
-                    ],
+                  ABrandTitleTextWithVerifyIcon(
+                    title: 'Nike',
                   ),
                 ],
               ),
@@ -156,3 +141,6 @@ class AProductsCardVertical extends StatelessWidget {
     );
   }
 }
+
+
+
