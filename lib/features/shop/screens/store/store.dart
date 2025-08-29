@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ushopia/common/widgets/appbar/tabbar.dart';
-import 'package:ushopia/utilities/constants/image_strings.dart';
 import '../../../../common/widgets/brands/brands_cards.dart';
-import '../../../../common/widgets/brands/brands_showcase.dart';
 import '/common/widgets/layouts/grid_layout.dart';
 import '/common/widgets/appbar/appbar.dart';
 import '/common/widgets/custom_shapes/containers/search_containers.dart';
@@ -11,6 +9,7 @@ import '/common/widgets/texts/section_heading.dart';
 import '/utilities/constants/colors.dart';
 import '/utilities/constants/sizes.dart';
 import '/utilities/helpers/helper_functions.dart';
+import 'widgets/category_tab.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -98,91 +97,11 @@ class StoreScreen extends StatelessWidget {
           },
           body: TabBarView(
             children: [
-              Padding(
-                padding: EdgeInsets.all(ASizes.defaultSpace),
-                child: Column(
-                  children: [
-                    ///Brands
-                    ABrandShowcase(
-                      images: [
-                        AImages.productImage3,
-                        AImages.productImage2,
-                        AImages.productImage1,
-                      ],
-                    ),
-
-                    ///Products
-                  ],
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.all(ASizes.defaultSpace),
-                child: Column(
-                  children: [
-                    ///Brands
-                    ABrandShowcase(
-                      images: [
-                        AImages.productImage3,
-                        AImages.productImage2,
-                        AImages.productImage1,
-                      ],
-                    ),
-
-                    ///Products
-                  ],
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.all(ASizes.defaultSpace),
-                child: Column(
-                  children: [
-                    ///Brands
-                    ABrandShowcase(
-                      images: [
-                        AImages.productImage3,
-                        AImages.productImage2,
-                        AImages.productImage1,
-                      ],
-                    ),
-
-                    ///Products
-                  ],
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.all(ASizes.defaultSpace),
-                child: Column(
-                  children: [
-                    ///Brands
-                    ABrandShowcase(
-                      images: [
-                         AImages.productImage3,
-                        AImages.productImage2,
-                        AImages.productImage1,
-                      ],
-                    ),
-
-                    ///Products
-                  ],
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.all(ASizes.defaultSpace),
-                child: Column(
-                  children: [
-                    ///Brands
-                    ABrandShowcase(
-                      images: [
-                        AImages.productImage3,
-                        AImages.productImage2,
-                        AImages.productImage1,
-                      ],
-                    ),
-
-                    ///Products
-                  ],
-                ),
-              ),
+              ACategoryTab(),
+              ACategoryTab(),
+              ACategoryTab(),
+              ACategoryTab(),
+              ACategoryTab(),
             ],
           ),
         ),
