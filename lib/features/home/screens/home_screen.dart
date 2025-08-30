@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '/utilities/constants/image_strings.dart';
-import '../../../../common/widgets/layouts/grid_layout.dart';
-import '../../../../common/widgets/products/products_cards/products_card_vertical.dart';
+import '../../../common/widgets/layouts/grid_layout.dart';
+import '../../../common/widgets/products/products_cards/products_card_vertical.dart';
 import '/utilities/constants/colors.dart';
 import '/utilities/constants/sizes.dart';
 import '/utilities/constants/text_strings.dart';
