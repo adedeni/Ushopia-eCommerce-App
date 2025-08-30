@@ -77,7 +77,7 @@ class StoreScreen extends StatelessWidget {
                             itemBuilder: (_, index) {
                               //Use backend to pass each brand and onPress event
                               return ABrandsCards(
-                                showBorder: false,
+                                showBorder: true,
                               );
                             }),
                       ],
