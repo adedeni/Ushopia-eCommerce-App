@@ -54,10 +54,12 @@ class HomeScreen extends StatelessWidget {
                           height: ASizes.spaceBtwItems,
                         ),
                         //Scrollable categories
-                        AHomeCategories()
+                        AHomeCategories(),
+                       
                       ],
                     ),
                   ),
+                  SizedBox(height: ASizes.spaceBtwSections,),
                 ],
               ),
             ),
