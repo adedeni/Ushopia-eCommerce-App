@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/common/widgets/appbar/tabbar.dart';
+import 'package:ushopia/common/widgets/tabbar/tabbar.dart';
 import '../../../../common/widgets/brands/brands_cards.dart';
 import '/common/widgets/layouts/grid_layout.dart';
 import '/common/widgets/appbar/appbar.dart';

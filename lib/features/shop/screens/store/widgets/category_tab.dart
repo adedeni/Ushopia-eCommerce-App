@@ -33,6 +33,16 @@ class ACategoryTab extends StatelessWidget {
                 SizedBox(
                   height: ASizes.spaceBtwItems,
                 ),
+                ABrandShowcase(
+                  images: [
+                    AImages.productImage3,
+                    AImages.productImage2,
+                    AImages.productImage1,
+                  ],
+                ),
+                SizedBox(
+                  height: ASizes.spaceBtwItems,
+                ),
 
                 ///Products
                 ASectionHeading(

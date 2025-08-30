@@ -85,22 +85,25 @@ class AProductsCardVertical extends StatelessWidget {
             ///Grid card details
             Padding(
               padding: EdgeInsets.only(left: ASizes.sm),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  ProductTitleText(
-                    title: 'Green AirForce 1 Shoes',
-                    smallSize: true,
-                  ),
-                  SizedBox(
-                    height: ASizes.spaceBtwItems / 2,
-                  ),
-
-                  ///Brands Name with verification badge
-                  ABrandTitleTextWithVerifyIcon(
-                    title: 'Nike',
-                  ),
-                ],
+              child: SizedBox(//This is to make the column take the full width
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    ProductTitleText(
+                      title: 'Green AirForce 1 Shoes',
+                      smallSize: true,
+                    ),
+                    SizedBox(
+                      height: ASizes.spaceBtwItems / 2,
+                    ),
+                
+                    ///Brands Name with verification badge
+                    ABrandTitleTextWithVerifyIcon(
+                      title: 'Nike',
+                    ),
+                  ],
+                ),
               ),
             ),
             Spacer(), //This is to ensure the product text utilizes max space available to uniformize the 2 or 1 maxLine text scenarios
