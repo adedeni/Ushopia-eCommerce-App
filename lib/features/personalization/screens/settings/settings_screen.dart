@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:ushopia/common/widgets/appbar/appbar.dart';
 import 'package:ushopia/common/widgets/custom_shapes/containers/primary_header_container.dart';
@@ -6,8 +7,9 @@ import 'package:ushopia/common/widgets/texts/section_heading.dart';
 import 'package:ushopia/utilities/constants/colors.dart';
 import 'package:ushopia/utilities/constants/sizes.dart';
 
-import '../../../common/widgets/list_tiles/settings_menu_tile.dart';
-import '../../../common/widgets/list_tiles/user_profile_tiles.dart';
+import '../../../../common/widgets/list_tiles/settings_menu_tile.dart';
+import '../../../../common/widgets/list_tiles/user_profile_tiles.dart';
+import '../profile/profile_screen.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -36,7 +38,9 @@ class SettingsScreen extends StatelessWidget {
                   ),
 
                   ///User Profile Tile
-                  AUserProfileTile(),
+                  AUserProfileTile(
+                    onPressed: () => Get.to(() => ProfileScreen()),
+                  ),
                   SizedBox(
                     height: ASizes.spaceBtwSections,
                   ),

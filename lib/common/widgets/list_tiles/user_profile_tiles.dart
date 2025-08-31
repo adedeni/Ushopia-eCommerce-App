@@ -8,8 +8,10 @@ import '../images/circular_image.dart';
 class AUserProfileTile extends StatelessWidget {
   const AUserProfileTile({
     super.key,
+    required this.onPressed,
   });
 
+  final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
     return ListTile(
@@ -28,13 +30,11 @@ class AUserProfileTile extends StatelessWidget {
       ),
       subtitle: Text(
         'adeshinaolayode@icloud.com',
-        style: Theme.of(context)
-            .textTheme
-            .bodyMedium!
-            .apply(color: AColors.white),
+        style:
+            Theme.of(context).textTheme.bodyMedium!.apply(color: AColors.white),
       ),
       trailing: IconButton(
-          onPressed: () {},
+          onPressed: onPressed,
           icon: Icon(
             Iconsax.edit,
             color: AColors.white,
