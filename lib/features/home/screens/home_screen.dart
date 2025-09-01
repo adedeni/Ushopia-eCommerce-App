@@ -89,7 +89,7 @@ class HomeScreen extends StatelessWidget {
 
                   ///Popular product grid
                   AGridLayout(
-                    itemCount: 6,
+                    itemCount: 2,
                     itemBuilder: (BuildContext p1, int p2) {
                       return AProductsCardVertical();
                     },

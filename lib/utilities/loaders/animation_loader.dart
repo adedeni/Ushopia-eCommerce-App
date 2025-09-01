@@ -6,7 +6,7 @@ import '../constants/sizes.dart';
 
 /// A widget for displaying an animated loading indicator with optional text and action button.
 class AAnimationLoaderWidget extends StatelessWidget {
-  /// Default constructor for the TAnimationLoaderWidget.
+/// Default constructor for the AAnimationLoaderWidget.
   ///
   /// Parameters:
   ///   - text: The text to be displayed below the animation.

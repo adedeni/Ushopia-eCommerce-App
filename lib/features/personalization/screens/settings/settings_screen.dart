@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:ushopia/common/widgets/appbar/appbar.dart';
 import 'package:ushopia/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:ushopia/common/widgets/texts/section_heading.dart';
+import 'package:ushopia/features/authentication/screens/login/login.dart';
 import 'package:ushopia/utilities/constants/colors.dart';
 import 'package:ushopia/utilities/constants/sizes.dart';
 
@@ -145,7 +146,7 @@ class SettingsScreen extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child: OutlinedButton(
-                      onPressed: () {},
+                      onPressed: () => Get.to(() => LoginScreen()),
                       child: Text('Logout'),
                     ),
                   ),
