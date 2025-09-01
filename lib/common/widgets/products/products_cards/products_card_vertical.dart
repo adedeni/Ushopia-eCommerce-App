@@ -59,7 +59,7 @@ class AProductsCardVertical extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(
                           horizontal: ASizes.sm, vertical: ASizes.xs),
                       child: Text(
-                        '25%',
+                        '100%',
                         style: Theme.of(context)
                             .textTheme
                             .labelLarge!

@@ -11,7 +11,7 @@ class AAppBar extends StatelessWidget implements PreferredSizeWidget {
   const AAppBar(
       {super.key,
       this.title,
-       this.showBackArrow = false,
+      this.showBackArrow = false,
       this.leadingIcon,
       this.actions,
       this.leadingOnPressed});
@@ -24,7 +24,6 @@ class AAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-
     final darkMode = AHelperFunctions.isDarkMode(context);
     return Padding(
       padding: const EdgeInsetsGeometry.symmetric(
@@ -35,13 +34,17 @@ class AAppBar extends StatelessWidget implements PreferredSizeWidget {
         leading: showBackArrow
             ? IconButton(
                 onPressed: () => Get.back(),
-                icon: Icon(Iconsax.arrow_left, color: darkMode ? AColors.white   : AColors.dark  ,))
+                icon: Icon(
+                  Iconsax.arrow_left,
+                  color: darkMode ? AColors.white : AColors.dark,
+                ),
+              )
             : leadingIcon != null
                 ? IconButton(
                     onPressed: leadingOnPressed, icon: Icon(leadingIcon))
                 : null,
-                title: title,
-                actions: actions,
+        title: title,
+        actions: actions,
       ),
     );
   }
