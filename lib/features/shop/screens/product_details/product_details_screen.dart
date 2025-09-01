@@ -64,8 +64,12 @@ class ProductDetailsScreen extends StatelessWidget {
                             );
                           },
                         ),
+                        
                       ),
-                    )
+                      
+                    ),
+                    
+                    
                   ],
                 ),
               ),
