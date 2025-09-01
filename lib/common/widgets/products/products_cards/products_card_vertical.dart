@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/features/shop/screens/product_details/product_details.dart';
+import 'package:ushopia/features/shop/screens/product_details/product_details_screen.dart';
 import '../../texts/brand_title_text_with_verified_icon.dart';
 import '../../texts/product_price_text.dart';
 import '../../texts/product_title_text.dart';
@@ -24,7 +24,7 @@ class AProductsCardVertical extends StatelessWidget {
 
     ///Container with side paddings, color, edges, radius and shadow
     return GestureDetector(
-      onTap: () =>Get.to(() => ProductDetails()),
+      onTap: () =>Get.to(() => ProductDetailsScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
