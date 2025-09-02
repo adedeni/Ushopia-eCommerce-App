@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/utilities/constants/sizes.dart';
 
 class AProfileMenuTiles extends StatelessWidget {
   const AProfileMenuTiles({

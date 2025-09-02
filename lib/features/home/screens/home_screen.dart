@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import '../../../common/widgets/custom_shapes/containers/primary_header_container_with_gradient.dart';
 import '/utilities/constants/image_strings.dart';
 import '../../../common/widgets/layouts/grid_layout.dart';
 import '../../../common/widgets/products/products_cards/products_card_vertical.dart';
 import '/utilities/constants/colors.dart';
 import '/utilities/constants/sizes.dart';
 import '/utilities/constants/text_strings.dart';
-import '/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '/common/widgets/custom_shapes/containers/search_containers.dart';
 import '/common/widgets/texts/section_heading.dart';
 import 'widgets/home_appbar.dart';
@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             //Home Screen Header
-            const APrimaryHeaderContainer(
+            const APrimaryHeaderContainerWithGradient(
               child: Column(
                 children: [
                   ///App bar

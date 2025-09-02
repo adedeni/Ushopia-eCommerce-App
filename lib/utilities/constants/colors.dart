@@ -7,7 +7,7 @@ class AColors {
 
   // App theme colors
   static const Color primary = Color(0xFFE64A19); // Deep orange (bag color)
-  static const Color secondary = Color(0xFFFFC107); // Amber (highlight/accent)
+  static const Color secondary = Colors.pink; // Amber (highlight/accent)
   static const Color accent = Color(0xFF795548); // Brown/earthy neutral
 
   // Gradient colors (sunset-style, matches logo energy)
@@ -58,4 +58,7 @@ class AColors {
   static const Color softGrey = Color(0xFFF4F4F4);
   static const Color lightGrey = Color(0xFFF9F9F9);
   static const Color white = Color(0xFFFFFFFF);
+
+    //Tags and others
+      static const Color amber = Color(0xFFFFC107);
 }

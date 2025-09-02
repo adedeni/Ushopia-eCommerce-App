@@ -36,7 +36,31 @@
   
   <img src="assets/images/banners/banner_7.jpg" alt="Sale Animation" width="200"/>
   <img src="assets/images/on_boarding_images/sammy-line-shopping.gif" alt="Banner" width="200"/>
-  <img src="assets/images/banners/banner_2.jpg" alt="Banner" width="200"/>
+  <img src="assets\screenshots\screenshot14" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot1" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot2" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot3" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot4" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot5" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot6" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot7" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot8" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot9" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot10" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot11" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot12" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot13" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot15" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot16" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot17" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot18" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot19" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot20" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot21" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot22" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot23" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot24" alt="App Screenshots" width="200"/>
+
 </p>
 
 ---

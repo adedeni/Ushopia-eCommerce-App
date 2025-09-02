@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
-import 'package:ushopia/common/widgets/texts/section_heading.dart';
-import 'package:ushopia/features/shop/screens/product_details/widgets/product_attributes.dart';
-import 'package:ushopia/features/shop/screens/product_details/widgets/product_meta_data.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/common/widgets/texts/section_heading.dart';
+import '/features/shop/screens/product_details/widgets/product_attributes.dart';
+import '/features/shop/screens/product_details/widgets/product_meta_data.dart';
+import '/utilities/constants/sizes.dart';
 import 'widgets/add_to_cart_button.dart';
 import 'widgets/product_image_slider.dart';
 import 'widgets/ratings_and_share.dart';

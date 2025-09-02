@@ -27,7 +27,7 @@ class APrimaryHeaderContainer extends StatelessWidget {
               top: -150,
               right: -250,
               child: ACircularContainer(
-                backgroundColor: AColors.textWhite.withOpacity(0.1),
+                backgroundColor: AColors.textWhite.withOpacity(0.1), 
               ),
             ),
             Positioned(

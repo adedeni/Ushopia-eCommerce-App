@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/common/widgets/appbar/appbar.dart';
-import 'package:ushopia/common/widgets/custom_shapes/containers/primary_header_container.dart';
-import 'package:ushopia/common/widgets/texts/section_heading.dart';
-import 'package:ushopia/features/authentication/screens/login/login.dart';
-import 'package:ushopia/utilities/constants/colors.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/common/widgets/appbar/appbar.dart';
+import '/common/widgets/texts/section_heading.dart';
+import '/features/authentication/screens/login/login.dart';
+import '/utilities/constants/colors.dart';
+import '/utilities/constants/sizes.dart';
 
+import '../../../../common/widgets/custom_shapes/containers/primary_header_container_with_gradient.dart';
 import '../../../../common/widgets/list_tiles/settings_menu_tile.dart';
 import '../../../../common/widgets/list_tiles/user_profile_tiles.dart';
 import '../profile/profile_screen.dart';
@@ -22,7 +22,7 @@ class SettingsScreen extends StatelessWidget {
         child: Column(
           children: [
             ///Header
-            APrimaryHeaderContainer(
+            APrimaryHeaderContainerWithGradient(
               child: Column(
                 children: [
                   AAppBar(

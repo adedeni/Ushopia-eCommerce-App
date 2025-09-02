@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/features/shop/screens/product_details/product_details_screen.dart';
+import '/features/shop/screens/product_details/product_details_screen.dart';
 import '../../texts/brand_title_text_with_verified_icon.dart';
 import '../../texts/product_price_text.dart';
 import '../../texts/product_title_text.dart';
@@ -55,7 +55,7 @@ class AProductsCardVertical extends StatelessWidget {
                     top: 12,
                     child: ARoundedContainer(
                       radius: ASizes.sm,
-                      backgroundColor: AColors.secondary.withOpacity(0.8),
+                      backgroundColor: AColors.amber.withOpacity(0.8),
                       padding: const EdgeInsets.symmetric(
                           horizontal: ASizes.sm, vertical: ASizes.xs),
                       child: Text(

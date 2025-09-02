@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/utilities/constants/colors.dart';
-import 'package:ushopia/utilities/device/device_utility.dart';
-import 'package:ushopia/utilities/helpers/helper_functions.dart';
+import '/utilities/constants/colors.dart';
+import '/utilities/device/device_utility.dart';
+import '/utilities/helpers/helper_functions.dart';
 
 class ATabbar extends StatelessWidget implements PreferredSizeWidget {
   ///

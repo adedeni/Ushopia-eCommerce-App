@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/common/widgets/icons/circular_container_icon.dart';
-import 'package:ushopia/common/widgets/layouts/grid_layout.dart';
-import 'package:ushopia/common/widgets/products/products_cards/products_card_vertical.dart';
-import 'package:ushopia/features/home/screens/home_screen.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/common/widgets/icons/circular_container_icon.dart';
+import '/common/widgets/layouts/grid_layout.dart';
+import '/common/widgets/products/products_cards/products_card_vertical.dart';
+import '/features/home/screens/home_screen.dart';
+import '/utilities/constants/sizes.dart';
 
 import '../../../../common/widgets/appbar/appbar.dart';
 

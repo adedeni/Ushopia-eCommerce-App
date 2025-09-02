@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/common/widgets/appbar/appbar.dart';
-import 'package:ushopia/common/widgets/images/circular_image.dart';
-import 'package:ushopia/common/widgets/texts/section_heading.dart';
-import 'package:ushopia/utilities/constants/image_strings.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/common/widgets/appbar/appbar.dart';
+import '/common/widgets/images/circular_image.dart';
+import '/common/widgets/texts/section_heading.dart';
+import '/utilities/constants/image_strings.dart';
+import '/utilities/constants/sizes.dart';
 
 import 'widgets/profile_menu_tiles.dart';
 

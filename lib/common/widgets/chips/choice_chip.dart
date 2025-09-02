@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/common/widgets/custom_shapes/containers/circular_container.dart';
-import 'package:ushopia/utilities/helpers/helper_functions.dart';
+import '/common/widgets/custom_shapes/containers/circular_container.dart';
+import '/utilities/helpers/helper_functions.dart';
 
 import '../../../utilities/constants/colors.dart';
 

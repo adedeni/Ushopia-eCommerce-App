@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/common/widgets/layouts/grid_layout.dart';
-import 'package:ushopia/common/widgets/products/products_cards/products_card_vertical.dart';
-import 'package:ushopia/common/widgets/texts/section_heading.dart';
+import '/common/widgets/layouts/grid_layout.dart';
+import '/common/widgets/products/products_cards/products_card_vertical.dart';
+import '/common/widgets/texts/section_heading.dart';
 
 import '../../../../../common/widgets/brands/brands_showcase.dart';
 import '../../../../../utilities/constants/image_strings.dart';
