@@ -33,13 +33,9 @@
 ## Screenshots
 
 <p align="center">
-  
-  <img src="assets/images/banners/banner_7.jpg" alt="Sale Animation" width="200"/>
-  <img src="assets/images/on_boarding_images/sammy-line-shopping.gif" alt="Banner" width="200"/>
   <img src="assets\screenshots\screenshot14.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot1.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot2.png" alt="App Screenshots" width="200"/>
-   <img src="assets\screenshots\screenshot3.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot4.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot5.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot6.png" alt="App Screenshots" width="200"/>
