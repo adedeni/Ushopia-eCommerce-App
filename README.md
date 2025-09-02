@@ -34,29 +34,19 @@
 
 <p align="center">
   <img src="assets\screenshots\screenshot14.png" alt="App Screenshots" width="200"/>
-   <img src="assets\screenshots\screenshot1.png" alt="App Screenshots" width="200"/>
-   <img src="assets\screenshots\screenshot2.png" alt="App Screenshots" width="200"/>
-   <img src="assets\screenshots\screenshot4.png" alt="App Screenshots" width="200"/>
-   <img src="assets\screenshots\screenshot5.png" alt="App Screenshots" width="200"/>
-   <img src="assets\screenshots\screenshot6.png" alt="App Screenshots" width="200"/>
+  
    <img src="assets\screenshots\screenshot7.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot8.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot9.png" alt="App Screenshots" width="200"/>
-   <img src="assets\screenshots\screenshot10.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot11.png" alt="App Screenshots" width="200"/>
-   <img src="assets\screenshots\screenshot12.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot13.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot15.png" alt="App Screenshots" width="200"/>
-   <img src="assets\screenshots\screenshot16.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot17.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot18.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot19.png" alt="App Screenshots" width="200"/>
-   <img src="assets\screenshots\screenshot20.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot21.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot22.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot23.png" alt="App Screenshots" width="200"/>
-   <img src="assets\screenshots\screenshot23.png" alt="App Screenshots" width="200"/>
-
 </p>
 
 ---
