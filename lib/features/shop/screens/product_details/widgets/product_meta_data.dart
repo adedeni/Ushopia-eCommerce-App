@@ -25,7 +25,7 @@ class ProductMetaData extends StatelessWidget {
             ///Sale Tag
             ARoundedContainer(
               radius: ASizes.sm,
-              backgroundColor: AColors.secondary.withOpacity(0.8),
+              backgroundColor: AColors.amber.withOpacity(0.8),
               padding: EdgeInsets.symmetric(
                 horizontal: ASizes.sm,
                 vertical: ASizes.xs,

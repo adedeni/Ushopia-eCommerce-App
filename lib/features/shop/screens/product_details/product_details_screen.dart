@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
+import '/features/shop/screens/product_reviews/product_reviews_screen.dart';
 import '/common/widgets/texts/section_heading.dart';
 import '/features/shop/screens/product_details/widgets/product_attributes.dart';
 import '/features/shop/screens/product_details/widgets/product_meta_data.dart';
@@ -83,21 +85,28 @@ class ProductDetailsScreen extends StatelessWidget {
                   SizedBox(
                     height: ASizes.spaceBtwItems,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      ASectionHeading(
-                        title: 'Reviews(472)',
-                        showActionButton: false,
-                      ),
-                      IconButton(
-                        icon: Icon(
-                          Iconsax.arrow_right_34,
-                          size: 18, 
+                  GestureDetector(
+                    onTap: () => Get.to(
+                      () => ProductReviewsScreen(),
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        ASectionHeading(
+                          title: 'Reviews(472)',
+                          showActionButton: false,
                         ),
-                        onPressed: () {},
-                      ),
-                    ],
+                        IconButton(
+                          icon: Icon(
+                            Iconsax.arrow_right_34,
+                            size: 18,
+                          ),
+                          onPressed: () => Get.to(
+                            () => ProductReviewsScreen(),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   SizedBox(
                     height: ASizes.spaceBtwSections,

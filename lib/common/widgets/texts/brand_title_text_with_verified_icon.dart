@@ -12,7 +12,7 @@ class ABrandTitleTextWithVerifyIcon extends StatelessWidget {
     required this.title,
     this.maxLines = 1,
     this.textColor,
-    this.iconColor = AColors.primary,
+    this.iconColor = AColors.verifyAndRating,
     this.textAlign = TextAlign.center,
     this.brandTextSIze = TextSizes.small,
   });
@@ -43,7 +43,7 @@ class ABrandTitleTextWithVerifyIcon extends StatelessWidget {
         ),
         Icon(
           Iconsax.verify5,
-          color: AColors.primary,
+          color: iconColor,
           size: ASizes.iconXs,
         )
       ],

@@ -61,4 +61,5 @@ class AColors {
 
     //Tags and others
       static const Color amber = Color(0xFFFFC107);
+      static const Color verifyAndRating = Color(0xFF405DE6);
 }
