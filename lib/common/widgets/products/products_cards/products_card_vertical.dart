@@ -92,7 +92,7 @@ class AProductsCardVertical extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    ProductTitleText(
+                    AProductTitleText(
                       title: 'Green AirForce 1 Shoes',
                       smallSize: true,
                     ),

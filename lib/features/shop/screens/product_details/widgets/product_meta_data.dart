@@ -62,7 +62,7 @@ class ProductMetaData extends StatelessWidget {
         ),
 
         ///Title
-        ProductTitleText(title: 'Nike AirForce One'),
+        AProductTitleText(title: 'Nike AirForce One'),
         SizedBox(
           height: ASizes.spaceBtwItems / 1.5,
         ),
@@ -70,7 +70,7 @@ class ProductMetaData extends StatelessWidget {
         ///Stock Status
         Row(
           children: [
-            ProductTitleText(title: 'Status'),
+            AProductTitleText(title: 'Status'),
             SizedBox(
               width: ASizes.spaceBtwItems / 1.5,
             ),
