@@ -5,8 +5,8 @@ import 'package:ushopia/utilities/constants/colors.dart';
 import 'package:ushopia/utilities/constants/sizes.dart';
 import 'package:ushopia/utilities/helpers/helper_functions.dart';
 
-class ABottomAddToCart extends StatelessWidget {
-  const ABottomAddToCart({super.key});
+class AAddToCartButton extends StatelessWidget {
+  const AAddToCartButton({super.key});
 
   @override
   Widget build(BuildContext context) {

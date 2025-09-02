@@ -5,7 +5,7 @@ import 'package:ushopia/common/widgets/texts/section_heading.dart';
 import 'package:ushopia/features/shop/screens/product_details/widgets/product_attributes.dart';
 import 'package:ushopia/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:ushopia/utilities/constants/sizes.dart';
-import 'widgets/bottom_add_to_cart.dart';
+import 'widgets/add_to_cart_button.dart';
 import 'widgets/product_image_slider.dart';
 import 'widgets/ratings_and_share.dart';
 
@@ -15,7 +15,7 @@ class ProductDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: ABottomAddToCart(),
+      bottomNavigationBar: AAddToCartButton(),
       body: SingleChildScrollView(
         child: Column(
           children: [
