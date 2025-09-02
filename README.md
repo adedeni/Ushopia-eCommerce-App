@@ -41,7 +41,7 @@
   
    <img src="assets\screenshots\screenshot15.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot17.png" alt="App Screenshots" width="200"/>
-   <img src="assets\screenshots\screenshot18.png" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot12.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot19.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot21.png" alt="App Screenshots" width="200"/>
     <img src="assets\screenshots\screenshot8.png" alt="App Screenshots" width="200"/>
