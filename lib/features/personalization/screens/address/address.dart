@@ -17,7 +17,7 @@ class UserAddressScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: AGradientFloatingActionButton(
         shape: ContinuousRectangleBorder(
-          borderRadius: BorderRadius.circular(ASizes.buttonRadius),
+          borderRadius: BorderRadius.circular(40),
         ), // Shape is circular by default but can be change to the following shapes, RoundedRectangleBorder(borderRadius: BorderRadius.circular(16),) //StadiumBorder(), //BeveledRectangleBorder() //ContinuousRectangleBorder()
         onPressed: () => Get.to(
           () => AddNewAddress(),
@@ -40,8 +40,13 @@ class UserAddressScreen extends StatelessWidget {
           child: Column(
             children: [
               ASingleAddress(
+                selectedAddress: false,
+              ),
+              ASingleAddress(
                 selectedAddress: true,
-              )
+              ),ASingleAddress(
+                selectedAddress: false,
+              ),
             ],
           ),
         ),

@@ -8,7 +8,7 @@ class AGradientFloatingActionButton extends StatelessWidget {
     super.key,
     required this.onPressed,
     required this.child,
-    this.borderRadius = 56.0 / 2, // Default to a circular radius
+    this.borderRadius = 28, // Default to a circular radius
     this.shape = const CircleBorder(),
   });
 
@@ -30,8 +30,8 @@ class AGradientFloatingActionButton extends StatelessWidget {
         // The splash color when the button is tapped.
         splashColor: Colors.white.withOpacity(0.3),
         child: Container(
-          width: 56.0,
-          height: 56.0,
+          width: 54,
+          height: 54,
           decoration: BoxDecoration(
             borderRadius: shape is RoundedRectangleBorder ? BorderRadius.circular(borderRadius) : null,
             shape: shape is CircleBorder ? BoxShape.circle : BoxShape.rectangle,
