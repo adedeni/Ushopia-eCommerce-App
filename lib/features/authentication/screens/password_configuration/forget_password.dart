@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import '../../../../common/widgets/buttons/gradient_elevated_buttons.dart';
 import '/features/authentication/screens/password_configuration/reset_password.dart';
 import '/utilities/constants/sizes.dart';
 import '/utilities/constants/text_strings.dart';
@@ -32,19 +33,21 @@ class ForgetPassword extends StatelessWidget {
             const SizedBox(
               height: ASizes.spaceBtwSections * 2,
             ),
+
             ///Text fields
             TextFormField(
               decoration: const InputDecoration(
-                  labelText: ATexts.email,
-                  prefixIcon: Icon(Iconsax.sms)),
+                  labelText: ATexts.email, prefixIcon: Icon(Iconsax.sms)),
             ),
             const SizedBox(
               height: ASizes.spaceBtwSections * 2,
             ),
+
             ///Summit buttons
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(onPressed: () => Get.off(()=> const ResetPassword()), child: const Text(ATexts.submit)))
+            AGradientElevatedButton(
+              onPressed: () => Get.off(() => const ResetPassword()),
+              text: ATexts.submit,
+            ),
           ],
         ),
       ),

@@ -5,6 +5,7 @@ import '../../../utilities/constants/text_strings.dart';
 import '../../../utilities/constants/sizes.dart';
 import '../../../utilities/helpers/helper_functions.dart';
 import '../../styles/spacing_style.dart';
+import '../buttons/gradient_elevated_buttons.dart';
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen(
@@ -53,13 +54,10 @@ class SuccessScreen extends StatelessWidget {
               ),
 
               ///Buttons
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: onPressed,
-                  child: const Text(ATexts.aContinue),
-                ),
-              ),
+              AGradientElevatedButton(
+                onPressed: onPressed,
+                text: ATexts.aContinue,
+              )
             ],
           ),
         ),

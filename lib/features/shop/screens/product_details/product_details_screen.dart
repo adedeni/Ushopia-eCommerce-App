@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
+import '../../../../common/widgets/buttons/gradient_elevated_buttons.dart';
 import '/features/shop/screens/product_reviews/product_reviews_screen.dart';
 import '/common/widgets/texts/section_heading.dart';
 import '/features/shop/screens/product_details/widgets/product_attributes.dart';
@@ -46,12 +47,9 @@ class ProductDetailsScreen extends StatelessWidget {
                   ),
 
                   ///Checkout Button
-                  SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: Text('Checkout'),
-                    ),
+                  AGradientElevatedButton(
+                    onPressed: () {},
+                    text: 'Checkout',
                   ),
                   SizedBox(
                     height: ASizes.spaceBtwSections,

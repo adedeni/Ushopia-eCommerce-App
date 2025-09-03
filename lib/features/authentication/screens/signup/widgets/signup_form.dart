@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import '../../../../../common/widgets/buttons/gradient_elevated_buttons.dart';
 import '/features/authentication/screens/signup/verify_email.dart';
 import '/features/authentication/screens/signup/widgets/terms_condition_checkbox.dart';
 import '/utilities/constants/sizes.dart';
@@ -9,14 +10,10 @@ import '/utilities/constants/text_strings.dart';
 class ASignupForm extends StatelessWidget {
   const ASignupForm({
     super.key,
-  
   });
-
-
 
   @override
   Widget build(BuildContext context) {
-    
     return Form(
       child: Column(
         children: [
@@ -46,7 +43,7 @@ class ASignupForm extends StatelessWidget {
               ),
             ],
           ),
-    
+
           ///Username
           const SizedBox(
             height: ASizes.spaceBtwInputFields,
@@ -58,7 +55,7 @@ class ASignupForm extends StatelessWidget {
               prefixIcon: Icon(Iconsax.user_edit),
             ),
           ),
-    
+
           ///Email
           const SizedBox(
             height: ASizes.spaceBtwInputFields,
@@ -70,7 +67,7 @@ class ASignupForm extends StatelessWidget {
               prefixIcon: Icon(Iconsax.direct),
             ),
           ),
-    
+
           ///Phone number
           const SizedBox(
             height: ASizes.spaceBtwInputFields,
@@ -82,7 +79,7 @@ class ASignupForm extends StatelessWidget {
               prefixIcon: Icon(Iconsax.call),
             ),
           ),
-    
+
           ///Password
           const SizedBox(
             height: ASizes.spaceBtwInputFields,
@@ -99,25 +96,24 @@ class ASignupForm extends StatelessWidget {
           const SizedBox(
             height: ASizes.spaceBtwInputFields,
           ),
-    
+
           ///Terms and conditions
           const ATermAndConditionCheckbox(),
-          const SizedBox(height: ASizes.spaceBtwSections,),
+          const SizedBox(
+            height: ASizes.spaceBtwSections,
+          ),
+
           ///Sign Up Button
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: () => Get.to(
-                  () { 
-                    return const VerifyEmailScreen();
-                  },
-                ),
-              child: const Text(ATexts.createAccount),
+          AGradientElevatedButton(
+            onPressed: () => Get.to(
+              () {
+                return const VerifyEmailScreen();
+              },
             ),
-          )
+            text: ATexts.createAccount,
+          ),
         ],
       ),
     );
   }
 }
-

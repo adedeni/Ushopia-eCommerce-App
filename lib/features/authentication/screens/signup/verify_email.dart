@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../../../common/widgets/buttons/gradient_elevated_buttons.dart';
 import '/features/authentication/screens/login/login.dart';
 import '/utilities/constants/image_strings.dart';
 import '/utilities/constants/sizes.dart';
@@ -70,23 +71,20 @@ class VerifyEmailScreen extends StatelessWidget {
                 ),
 
                 ///Buttons
-                SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: () => Get.to(
-                      () {
-                        return SuccessScreen(
-                          image: AImages.staticSuccessIllustration,
-                          title: ATexts.yourAccountCreatedTitle,
-                          subtitle: ATexts.yourAccountCreatedSubTitle,
-                          onPressed: () => Get.to(
-                            ()=> const LoginScreen(),
-                          ),
-                        );
-                      },
-                    ),
-                    child: const Text(ATexts.aContinue),
+                AGradientElevatedButton(
+                  onPressed: () => Get.to(
+                    () {
+                      return SuccessScreen(
+                        image: AImages.staticSuccessIllustration,
+                        title: ATexts.yourAccountCreatedTitle,
+                        subtitle: ATexts.yourAccountCreatedSubTitle,
+                        onPressed: () => Get.to(
+                          () => const LoginScreen(),
+                        ),
+                      );
+                    },
                   ),
+                  text: ATexts.aContinue,
                 ),
                 const SizedBox(
                   height: ASizes.spaceBtwItems,

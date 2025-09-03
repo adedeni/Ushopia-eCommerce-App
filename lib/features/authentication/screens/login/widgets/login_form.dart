@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import '../../../../../common/widgets/buttons/gradient_elevated_buttons.dart';
 import '/features/authentication/screens/password_configuration/forget_password.dart';
 import '/features/authentication/screens/signup/signup.dart';
 import '/navigation_menu.dart';
@@ -61,12 +62,9 @@ class ALoginForm extends StatelessWidget {
             ),
 
             //Sign in Button
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: () => Get.to(()=>const NavigationMenu()),
-                child: const Text(ATexts.signIn),
-              ),
+            AGradientElevatedButton(
+              onPressed: () => Get.to(() => const NavigationMenu()),
+              text: ATexts.signIn,
             ),
             const SizedBox(
               height: ASizes.spaceBtwItems,

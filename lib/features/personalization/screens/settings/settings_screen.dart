@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
 import 'package:iconsax/iconsax.dart';
+import '/features/personalization/screens/address/address.dart';
 import '/common/widgets/appbar/appbar.dart';
 import '/common/widgets/texts/section_heading.dart';
 import '/features/authentication/screens/login/login.dart';
@@ -66,7 +68,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home,
                     title: 'My Address',
                     subTitle: 'Set shopping address',
-                    onTap: () {},
+                    onTap: () => Get.to(()=>UserAddressScreen()),
                   ),
                   ASettingsMenuTile(
                     icon: Iconsax.shopping_cart,

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../../../common/widgets/buttons/gradient_elevated_buttons.dart';
 import '/features/authentication/screens/login/login.dart';
 import '/utilities/constants/image_strings.dart';
 import '/utilities/constants/sizes.dart';
@@ -57,14 +58,9 @@ class ResetPassword extends StatelessWidget {
               ),
 
               ///Buttons
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () => Get.to(
-                    () => const LoginScreen(),
-                  ),
-                  child: const Text(ATexts.done),
-                ),
+              AGradientElevatedButton(
+                onPressed: () => Get.to(() => const LoginScreen()),
+                text: ATexts.done,
               ),
               const SizedBox(
                 height: ASizes.spaceBtwItems,
