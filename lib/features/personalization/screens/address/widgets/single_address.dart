@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:ushopia/utilities/constants/colors.dart';
 import 'package:ushopia/utilities/constants/sizes.dart';
+import 'package:ushopia/utilities/constants/text_strings.dart';
 import 'package:ushopia/utilities/helpers/helper_functions.dart';
 
 import '../../../../../common/widgets/custom_shapes/containers/rounded_container.dart';
@@ -48,7 +49,7 @@ class ASingleAddress extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Adedeni Adeshina',
+                ATexts.homeAppbarSubTitle,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: Theme.of(context).textTheme.titleLarge,

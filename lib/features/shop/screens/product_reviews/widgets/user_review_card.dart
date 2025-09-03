@@ -5,6 +5,7 @@ import 'package:ushopia/common/widgets/products/ratings/rating_indicator.dart';
 import 'package:ushopia/utilities/constants/colors.dart';
 import 'package:ushopia/utilities/constants/image_strings.dart';
 import 'package:ushopia/utilities/constants/sizes.dart';
+import 'package:ushopia/utilities/constants/text_strings.dart';
 import 'package:ushopia/utilities/helpers/helper_functions.dart';
 
 class AUserReviewCard extends StatelessWidget {
@@ -27,7 +28,7 @@ class AUserReviewCard extends StatelessWidget {
                   width: ASizes.spaceBtwItems,
                 ),
                 Text(
-                  'Oluniyi Saheed',
+                  ATexts.homeAppbarSubTitle,
                   style: Theme.of(context).textTheme.titleLarge,
                 )
               ],

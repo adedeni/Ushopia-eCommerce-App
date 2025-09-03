@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:ushopia/features/shop/screens/cart/cart.dart';
 
 import '/../common/widgets/appbar/appbar.dart';
 import '/../common/widgets/products/cart/cart_menu_icon.dart';
@@ -34,7 +36,7 @@ class AHomeAppBar extends StatelessWidget {
       ),
       actions: [
         ACartCounterIcon(
-          onPressed: () {},
+          onPressed: () => Get.to(() => CartScreen()),
           iconColor: AColors.white,
         ),
       ],
