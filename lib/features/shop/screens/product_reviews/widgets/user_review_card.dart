@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
-import 'package:ushopia/common/widgets/custom_shapes/containers/rounded_container.dart';
-import 'package:ushopia/common/widgets/products/ratings/rating_indicator.dart';
-import 'package:ushopia/utilities/constants/colors.dart';
-import 'package:ushopia/utilities/constants/image_strings.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
-import 'package:ushopia/utilities/constants/text_strings.dart';
-import 'package:ushopia/utilities/helpers/helper_functions.dart';
+import '/common/widgets/custom_shapes/containers/rounded_container.dart';
+import '/common/widgets/products/ratings/rating_indicator.dart';
+import '/utilities/constants/colors.dart';
+import '/utilities/constants/image_strings.dart';
+import '/utilities/constants/sizes.dart';
+import '/utilities/constants/text_strings.dart';
+import '/utilities/helpers/helper_functions.dart';
 
 class AUserReviewCard extends StatelessWidget {
   const AUserReviewCard({super.key});

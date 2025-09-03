@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/common/widgets/appbar/appbar.dart';
-import 'package:ushopia/common/widgets/buttons/gradient_elevated_buttons.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/common/widgets/appbar/appbar.dart';
+import '/common/widgets/buttons/gradient_elevated_buttons.dart';
+import '/utilities/constants/sizes.dart';
 
 class AddNewAddress extends StatelessWidget {
   const AddNewAddress({super.key});

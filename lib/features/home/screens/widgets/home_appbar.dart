@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ushopia/features/shop/screens/cart/cart.dart';
+import '/features/shop/screens/cart/cart.dart';
 
 import '/../common/widgets/appbar/appbar.dart';
 import '/../common/widgets/products/cart/cart_menu_icon.dart';

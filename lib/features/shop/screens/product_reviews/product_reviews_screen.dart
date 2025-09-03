@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
-import 'package:ushopia/common/widgets/appbar/appbar.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/common/widgets/appbar/appbar.dart';
+import '/utilities/constants/sizes.dart';
 import '../../../../common/widgets/products/ratings/rating_indicator.dart';
 import 'widgets/rating_progress_indicator.dart';
 import 'widgets/user_review_card.dart';

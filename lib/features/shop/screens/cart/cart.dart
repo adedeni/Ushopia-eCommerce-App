@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/common/widgets/appbar/appbar.dart';
-import 'package:ushopia/common/widgets/buttons/gradient_elevated_buttons.dart';
-import 'package:ushopia/common/widgets/texts/product_price_text.dart';
-import 'package:ushopia/utilities/helpers/helper_functions.dart';
-import 'package:ushopia/utilities/theme/widget_themes/elevated_button_theme.dart';
+import '/common/widgets/appbar/appbar.dart';
+import '/common/widgets/buttons/gradient_elevated_buttons.dart';
+import '/common/widgets/texts/product_price_text.dart';
 import '../../../../common/widgets/products/cart/add_remove_button.dart';
 import '../../../../common/widgets/products/cart/cart_item.dart';
 import '../../../../utilities/constants/sizes.dart';
@@ -13,7 +11,7 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final darkMode = AHelperFunctions.isDarkMode(context);
+
     return Scaffold(
       appBar: AAppBar(
         showBackArrow: true,

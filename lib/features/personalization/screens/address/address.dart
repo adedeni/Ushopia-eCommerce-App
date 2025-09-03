@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/common/widgets/appbar/appbar.dart';
-import 'package:ushopia/utilities/constants/colors.dart';
+import '/common/widgets/appbar/appbar.dart';
+import '/utilities/constants/colors.dart';
 
 import '../../../../common/widgets/buttons/floating_action_button_with_gradient.dart';
 import '../../../../utilities/constants/sizes.dart';
