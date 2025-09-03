@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:iconsax/iconsax.dart';
+import 'package:ushopia/features/shop/screens/cart/cart.dart';
+import 'package:ushopia/features/shop/screens/orders/orders.dart';
 import '/features/personalization/screens/address/address.dart';
 import '/common/widgets/appbar/appbar.dart';
 import '/common/widgets/texts/section_heading.dart';
@@ -30,23 +32,18 @@ class SettingsScreen extends StatelessWidget {
                   AAppBar(
                     title: Text(
                       'Account',
-                      style: Theme.of(context)
-                          .textTheme
-                          .headlineMedium!
-                          .apply(color: AColors.white),
+                      style: Theme.of(
+                        context,
+                      ).textTheme.headlineMedium!.apply(color: AColors.white),
                     ),
                   ),
-                  SizedBox(
-                    height: ASizes.spaceBtwSections,
-                  ),
+                  SizedBox(height: ASizes.spaceBtwSections),
 
                   ///User Profile Tile
                   AUserProfileTile(
                     onPressed: () => Get.to(() => ProfileScreen()),
                   ),
-                  SizedBox(
-                    height: ASizes.spaceBtwSections,
-                  ),
+                  SizedBox(height: ASizes.spaceBtwSections),
                 ],
               ),
             ),
@@ -61,26 +58,24 @@ class SettingsScreen extends StatelessWidget {
                     title: 'Account Settings',
                     showActionButton: false,
                   ),
-                  SizedBox(
-                    height: ASizes.spaceBtwItems,
-                  ),
+                  SizedBox(height: ASizes.spaceBtwItems),
                   ASettingsMenuTile(
                     icon: Iconsax.safe_home,
                     title: 'My Address',
                     subTitle: 'Set shopping address',
-                    onTap: () => Get.to(()=>UserAddressScreen()),
+                    onTap: () => Get.to(() => UserAddressScreen()),
                   ),
                   ASettingsMenuTile(
                     icon: Iconsax.shopping_cart,
                     title: 'My Cart',
                     subTitle: 'Add, remove products and move to checkout',
-                    onTap: () {},
+                    onTap: () => Get.to(() => CartScreen()),
                   ),
                   ASettingsMenuTile(
                     icon: Iconsax.bag_tick,
                     title: 'My Orders',
                     subTitle: 'In-progress and Completed Orders',
-                    onTap: () {},
+                    onTap: () => Get.to(() => OrdersScreen()),
                   ),
                   ASettingsMenuTile(
                     icon: Iconsax.bank,
@@ -113,9 +108,7 @@ class SettingsScreen extends StatelessWidget {
                     title: 'App Settings',
                     showActionButton: false,
                   ),
-                  SizedBox(
-                    height: ASizes.spaceBtwItems,
-                  ),
+                  SizedBox(height: ASizes.spaceBtwItems),
                   ASettingsMenuTile(
                     icon: Iconsax.document_upload,
                     title: 'Load Data',
@@ -140,9 +133,7 @@ class SettingsScreen extends StatelessWidget {
                     subTitle: 'Set quality of products images',
                     trailing: Switch(value: false, onChanged: (value) {}),
                   ),
-                  SizedBox(
-                    height: ASizes.spaceBtwSections,
-                  ),
+                  SizedBox(height: ASizes.spaceBtwSections),
 
                   ///Logout Button
                   SizedBox(
@@ -152,9 +143,7 @@ class SettingsScreen extends StatelessWidget {
                       child: Text('Logout'),
                     ),
                   ),
-                  SizedBox(
-                    height: ASizes.spaceBtwSections * 2.5,
-                  ),
+                  SizedBox(height: ASizes.spaceBtwSections * 2.5),
                 ],
               ),
             ),

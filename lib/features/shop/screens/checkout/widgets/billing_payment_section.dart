@@ -32,7 +32,7 @@ class ABillingPaymentSection extends StatelessWidget {
                 fit: BoxFit.contain,
               ),
             ),
-            SizedBox(height: ASizes.spaceBtwItems / 2),
+            SizedBox(width: ASizes.spaceBtwItems / 2),
             Text('MasterCard', style: Theme.of(context).textTheme.bodyLarge),
           ],
         ),
