@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:ushopia/common/widgets/appbar/appbar.dart';
 import 'package:ushopia/utilities/constants/colors.dart';
 
+import '../../../../common/widgets/buttons/floating_action_button_with_gradient.dart';
 import '../../../../utilities/constants/sizes.dart';
 import 'add_new_address.dart';
 import 'widgets/single_address.dart';
@@ -14,12 +15,14 @@ class UserAddressScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: AColors.primary,
+      floatingActionButton: AGradientFloatingActionButton(
+        shape: ContinuousRectangleBorder(
+          borderRadius: BorderRadius.circular(ASizes.buttonRadius),
+        ), // Shape is circular by default but can be change to the following shapes, RoundedRectangleBorder(borderRadius: BorderRadius.circular(16),) //StadiumBorder(), //BeveledRectangleBorder() //ContinuousRectangleBorder()
         onPressed: () => Get.to(
           () => AddNewAddress(),
         ),
-        child: Icon(
+        child: const Icon(
           Iconsax.add,
           color: AColors.white,
         ),
@@ -36,7 +39,9 @@ class UserAddressScreen extends StatelessWidget {
           padding: EdgeInsets.all(ASizes.defaultSpace),
           child: Column(
             children: [
-              ASingleAddress(selectedAddress: true,)
+              ASingleAddress(
+                selectedAddress: true,
+              )
             ],
           ),
         ),
@@ -44,4 +49,3 @@ class UserAddressScreen extends StatelessWidget {
     );
   }
 }
-
