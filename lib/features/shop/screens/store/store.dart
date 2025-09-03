@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import '../cart/cart.dart';
 import '/common/widgets/tabbar/tabbar.dart';
 import '../../../../common/widgets/brands/brands_cards.dart';
 import '/common/widgets/layouts/grid_layout.dart';
@@ -28,71 +30,65 @@ class StoreScreen extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineMedium,
           ),
           actions: [
-            ACartCounterIcon(
-              onPressed: () {},
-            )
+            ACartCounterIcon(onPressed: () => Get.to(() => CartScreen())),
           ],
         ),
         body: NestedScrollView(
           headerSliverBuilder: (_, innerBoxIsScrolled) {
             return [
               SliverAppBar(
-                  automaticallyImplyLeading: false,
-                  pinned: true,
-                  floating: true,
-                  backgroundColor: darkMode ? AColors.black : AColors.white,
-                  expandedHeight: 440, //Space between Appbar and TabBar
-                  flexibleSpace: Padding(
-                    padding: EdgeInsetsGeometry.all(ASizes.defaultSpace),
-                    child: ListView(
-                      physics: NeverScrollableScrollPhysics(),
-                      shrinkWrap: true,
-                      children: [
-                        SizedBox(
-                          height: ASizes.spaceBtwItems,
-                        ),
-                        //Search Bar
-                        ASearchContainer(
-                          text: 'Search in store',
-                          showBorder: true,
-                          showBackground: false,
-                          padding: EdgeInsets.zero,
-                        ),
-                        SizedBox(
-                          height: ASizes.spaceBtwSections,
-                        ),
-                        //Featured Brands
-                        ASectionHeading(
-                          title: 'Feature Brands',
-                          onPressed: () {},
-                        ),
-                        SizedBox(
-                          height: ASizes.spaceBtwItems / 1.5,
-                        ),
+                automaticallyImplyLeading: false,
+                pinned: true,
+                floating: true,
+                backgroundColor: darkMode ? AColors.black : AColors.white,
+                expandedHeight: 440, //Space between Appbar and TabBar
+                flexibleSpace: Padding(
+                  padding: EdgeInsetsGeometry.all(ASizes.defaultSpace),
+                  child: ListView(
+                    physics: NeverScrollableScrollPhysics(),
+                    shrinkWrap: true,
+                    children: [
+                      SizedBox(height: ASizes.spaceBtwItems),
+                      //Search Bar
+                      ASearchContainer(
+                        text: 'Search in store',
+                        showBorder: true,
+                        showBackground: false,
+                        padding: EdgeInsets.zero,
+                      ),
+                      SizedBox(height: ASizes.spaceBtwSections),
+                      //Featured Brands
+                      ASectionHeading(
+                        title: 'Feature Brands',
+                        onPressed: () {},
+                      ),
+                      SizedBox(height: ASizes.spaceBtwItems / 1.5),
 
-                        //Custom Brands Grids
-                        AGridLayout(
-                            itemCount: 4,
-                            mainAxisExtent: 80,
-                            itemBuilder: (_, index) {
-                              //Use backend to pass each brand and onPress event
-                              return ABrandsCards(
-                                showBorder: true,
-                              );
-                            }),
-                      ],
-                    ),
+                      //Custom Brands Grids
+                      AGridLayout(
+                        itemCount: 4,
+                        mainAxisExtent: 80,
+                        itemBuilder: (_, index) {
+                          //Use backend to pass each brand and onPress event
+                          return ABrandsCards(showBorder: true);
+                        },
+                      ),
+                    ],
                   ),
+                ),
 
-                  ///Tab bar design
-                  bottom: ATabbar(tabs: [
+                ///Tab bar design
+                bottom: ATabbar(
+                  tabs: [
                     //Headings
                     Tab(child: Text('Sports')),
                     Tab(child: Text('Furniture')),
                     Tab(child: Text('Electronics')),
                     Tab(child: Text('Clothes')),
                     Tab(child: Text('Cosmetics')),
-                  ])),
+                  ],
+                ),
+              ),
             ];
           },
           body: TabBarView(

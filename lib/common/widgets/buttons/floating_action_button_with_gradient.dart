@@ -22,7 +22,7 @@ class AGradientFloatingActionButton extends StatelessWidget {
     return Material(
       // The material widget gives the button its elevation and shadow.
       elevation: 6.0,
-      shape: shape,
+      shape: shape, // Shape is circular by default but can be change to the following shapes, RoundedRectangleBorder(borderRadius: BorderRadius.circular(16),) //StadiumBorder(), //BeveledRectangleBorder() //ContinuousRectangleBorder()
       clipBehavior: Clip.antiAlias,
       color: Colors.transparent,
       child: InkWell(
