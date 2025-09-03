@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:iconsax/iconsax.dart';
+import '../../../../utilities/constants/sizes.dart';
+import '../../../../utilities/device/device_utility.dart';
 import '/features/authentication/controllers/onboarding_controller.dart';
 import '/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 import '/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
@@ -49,9 +51,13 @@ class OnboardingScreen extends StatelessWidget {
         const OnboardingDotNavigation(),
 
         /// Circular button
-         OnboardingNextButtonWithGradient(
-          onPressed: () =>OnboardingController.instance.nextPage(),
-          icon: const Icon(Iconsax.arrow_right_3),
+        Positioned(
+          bottom: ADeviceUtils.getBottomNavigationBarHeight() ,
+          right: ASizes.defaultSpace,
+          child: OnboardingNextButtonWithGradient(
+            onPressed: () => OnboardingController.instance.nextPage(),
+            icon: const Icon(Iconsax.arrow_right_3),
+          ),
         )
       ]),
     );
