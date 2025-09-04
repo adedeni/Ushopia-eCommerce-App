@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../all_products/all_products.dart';
 import '../cart/cart.dart';
 import '/common/widgets/tabbar/tabbar.dart';
 import '../../../../common/widgets/brands/brands_cards.dart';
@@ -60,7 +61,7 @@ class StoreScreen extends StatelessWidget {
                       //Featured Brands
                       ASectionHeading(
                         title: 'Feature Brands',
-                        onPressed: () {},
+                        onPressed:  () => Get.to(() => AllProducts()),
                       ),
                       SizedBox(height: ASizes.spaceBtwItems / 1.5),
 

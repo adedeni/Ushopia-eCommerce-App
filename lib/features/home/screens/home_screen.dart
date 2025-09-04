@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:ushopia/features/shop/screens/all_products/all_products.dart';
 import '../../../common/widgets/custom_shapes/containers/primary_header_container_with_gradient.dart';
 import '/utilities/constants/image_strings.dart';
 import '../../../common/widgets/layouts/grid_layout.dart';
@@ -27,22 +29,14 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   ///App bar
                   AHomeAppBar(),
-                  SizedBox(
-                    height: ASizes.spaceBtwSections,
-                  ),
+                  SizedBox(height: ASizes.spaceBtwSections),
 
                   ///Search bar
-                  ASearchContainer(
-                    text: ATexts.searchContainerText,
-                  ),
-                  SizedBox(
-                    height: ASizes.spaceBtwSections,
-                  ),
+                  ASearchContainer(text: ATexts.searchContainerText),
+                  SizedBox(height: ASizes.spaceBtwSections),
                   //Categories headings
                   Padding(
-                    padding: EdgeInsets.only(
-                      left: ASizes.defaultSpace,
-                    ),
+                    padding: EdgeInsets.only(left: ASizes.defaultSpace),
                     child: Column(
                       children: [
                         ASectionHeading(
@@ -50,16 +44,13 @@ class HomeScreen extends StatelessWidget {
                           showActionButton: false,
                           textColor: AColors.textWhite,
                         ),
-                        SizedBox(
-                          height: ASizes.spaceBtwItems,
-                        ),
+                        SizedBox(height: ASizes.spaceBtwItems),
                         //Scrollable categories
                         AHomeCategories(),
-                       
                       ],
                     ),
                   ),
-                  SizedBox(height: ASizes.spaceBtwSections,),
+                  SizedBox(height: ASizes.spaceBtwSections),
                 ],
               ),
             ),
@@ -77,15 +68,14 @@ class HomeScreen extends StatelessWidget {
                       AImages.promoBanner3,
                     ],
                   ),
-                  const SizedBox(
-                    height: ASizes.spaceBtwSections,
-                  ),
+                  const SizedBox(height: ASizes.spaceBtwSections),
 
                   ///Category Heading
-                   ASectionHeading(title: 'Popular Products',onPressed: () {},),
-                  const SizedBox(
-                    height: ASizes.spaceBtwItems,
+                  ASectionHeading(
+                    title: 'Popular Products',
+                    onPressed: () => Get.to(() => AllProducts()),
                   ),
+                  const SizedBox(height: ASizes.spaceBtwItems),
 
                   ///Popular product grid
                   AGridLayout(
@@ -96,7 +86,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

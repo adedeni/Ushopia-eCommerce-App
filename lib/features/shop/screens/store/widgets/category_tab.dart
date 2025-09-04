@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import '../../all_products/all_products.dart';
 import '/common/widgets/layouts/grid_layout.dart';
 import '/common/widgets/products/products_cards/products_card_vertical.dart';
 import '/common/widgets/texts/section_heading.dart';
@@ -48,7 +50,7 @@ class ACategoryTab extends StatelessWidget {
                 ASectionHeading(
                   title: 'You might like',
                   showActionButton: true,
-                  onPressed: () {},
+                  onPressed:  () => Get.to(() => AllProducts()),
                 ),
                 SizedBox(
                   height: ASizes.spaceBtwItems,
