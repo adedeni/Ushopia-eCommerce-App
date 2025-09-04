@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:ushopia/features/shop/screens/sub_category/sub_categories.dart';
 
 import '/../common/widgets/image_text_widgets/vertical_image_text.dart';
 import '/../utilities/constants/image_strings.dart';
@@ -20,7 +22,7 @@ class AHomeCategories extends StatelessWidget {
           return AVerticalImageText(
             image: AImages.sportIcon,
             title: 'Sport Icon',
-            onTap: () {},
+            onTap: () => Get.to(()=> SubCategories()),
           );
         },
       ),

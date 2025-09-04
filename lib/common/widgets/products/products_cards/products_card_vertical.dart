@@ -76,7 +76,7 @@ class AProductsCardVertical extends StatelessWidget {
                       color: Colors.red,
                       icon: Iconsax.heart5,
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
