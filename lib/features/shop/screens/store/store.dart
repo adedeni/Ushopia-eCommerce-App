@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../all_products/all_products.dart';
+import 'package:ushopia/features/shop/screens/brands/all_brands.dart';
 import '../cart/cart.dart';
 import '/common/widgets/tabbar/tabbar.dart';
 import '../../../../common/widgets/brands/brands_cards.dart';
@@ -61,7 +61,7 @@ class StoreScreen extends StatelessWidget {
                       //Featured Brands
                       ASectionHeading(
                         title: 'Feature Brands',
-                        onPressed:  () => Get.to(() => AllProducts()),
+                        onPressed:  () => Get.to(() => AllBrandsScreen()),
                       ),
                       SizedBox(height: ASizes.spaceBtwItems / 1.5),
 
