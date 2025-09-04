@@ -14,7 +14,7 @@ class AGridListItems extends StatelessWidget {
     return ListView.separated(
       itemCount: 2,
       shrinkWrap: true,
-      separatorBuilder: (_, __) => SizedBox(height:ASizes.spaceBtwItems ,),
+      separatorBuilder: (_, _) => SizedBox(height:ASizes.spaceBtwItems ,),
       itemBuilder: (_, index) => ARoundedContainer(
         padding: EdgeInsets.all(ASizes.md),
         showBorder: true,
