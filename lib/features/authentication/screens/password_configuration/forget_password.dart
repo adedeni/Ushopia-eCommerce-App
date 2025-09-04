@@ -6,8 +6,8 @@ import '/features/authentication/screens/password_configuration/reset_password.d
 import '/utilities/constants/sizes.dart';
 import '/utilities/constants/text_strings.dart';
 
-class ForgetPassword extends StatelessWidget {
-  const ForgetPassword({super.key});
+class ForgotPassword extends StatelessWidget {
+  const ForgotPassword({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,14 +20,14 @@ class ForgetPassword extends StatelessWidget {
           children: [
             ///Headings
             Text(
-              ATexts.forgetPasswordTitle,
+              ATexts.forgotPasswordTitle,
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             const SizedBox(
               height: ASizes.spaceBtwItems,
             ),
             Text(
-              ATexts.forgetPasswordSubTitle,
+              ATexts.forgotPasswordSubTitle,
               style: Theme.of(context).textTheme.labelMedium,
             ),
             const SizedBox(

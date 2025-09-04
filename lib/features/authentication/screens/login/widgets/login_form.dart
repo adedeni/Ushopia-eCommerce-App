@@ -48,12 +48,12 @@ class ALoginForm extends StatelessWidget {
                     const Text(ATexts.rememberMe)
                   ],
                 ),
-                //Forget password
+                //Forgot password
                 TextButton(
                   onPressed: () => Get.to(
-                    () => const ForgetPassword(),
+                    () => const ForgotPassword(),
                   ),
-                  child: const Text(ATexts.forgetPassword),
+                  child: const Text(ATexts.forgotPassword),
                 )
               ],
             ),

@@ -21,7 +21,7 @@ class ALoginHeader extends StatelessWidget {
         Image(
           height: 150,
           image: AssetImage(
-              dark ? AImages.lightAppLogo : AImages.darkAppLogo),
+              dark ? AImages.darkAppLogo : AImages.lightAppLogo),
         ),
         Text(ATexts.loginTitle,
             style: Theme.of(context).textTheme.headlineMedium),
