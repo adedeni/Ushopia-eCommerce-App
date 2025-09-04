@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/common/widgets/custom_shapes/containers/rounded_container.dart';
-import 'package:ushopia/utilities/constants/colors.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
-import 'package:ushopia/utilities/helpers/helper_functions.dart';
+import '/common/widgets/custom_shapes/containers/rounded_container.dart';
+import '/utilities/constants/colors.dart';
+import '/utilities/constants/sizes.dart';
+import '/utilities/helpers/helper_functions.dart';
 
 class AGridListItems extends StatelessWidget {
   const AGridListItems({super.key});

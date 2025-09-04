@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/utilities/constants/sizes.dart';
 
 class ABillingAmountSection extends StatelessWidget {
   const ABillingAmountSection({super.key});

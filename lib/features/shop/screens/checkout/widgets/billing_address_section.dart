@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/common/widgets/texts/section_heading.dart';
-import 'package:ushopia/utilities/constants/colors.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/common/widgets/texts/section_heading.dart';
+import '/utilities/constants/colors.dart';
+import '/utilities/constants/sizes.dart';
 
 class ABillingAddressSection extends StatelessWidget {
   const ABillingAddressSection({super.key});

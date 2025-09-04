@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
-import 'package:ushopia/features/shop/screens/checkout/checkout.dart';
+import '/features/shop/screens/checkout/checkout.dart';
 import '../../../../common/widgets/buttons/gradient_elevated_buttons.dart';
 import '/features/shop/screens/product_reviews/product_reviews_screen.dart';
 import '/common/widgets/texts/section_heading.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/utilities/constants/sizes.dart';
 
 import '../../../../common/widgets/appbar/appbar.dart';
 import '../../../../common/widgets/products/sortable/sortable_products.dart';

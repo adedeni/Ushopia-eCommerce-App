@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ushopia/common/widgets/appbar/appbar.dart';
-import 'package:ushopia/common/widgets/brands/brands_cards.dart';
-import 'package:ushopia/common/widgets/layouts/grid_layout.dart';
-import 'package:ushopia/common/widgets/texts/section_heading.dart';
-import 'package:ushopia/features/shop/screens/brands/brand_products.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/common/widgets/appbar/appbar.dart';
+import '/common/widgets/brands/brands_cards.dart';
+import '/common/widgets/layouts/grid_layout.dart';
+import '/common/widgets/texts/section_heading.dart';
+import '/features/shop/screens/brands/brand_products.dart';
+import '/utilities/constants/sizes.dart';
 
 class AllBrandsScreen extends StatelessWidget {
   const AllBrandsScreen({super.key});

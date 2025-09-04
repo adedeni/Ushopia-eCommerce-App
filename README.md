@@ -36,20 +36,16 @@
   <img src="assets\screenshots\screenshot14.png" alt="App Screenshots" width="200"/>
   <img src="assets\screenshots\screenshot11.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot13.png" alt="App Screenshots" width="200"/>
-   
-   
-  
    <img src="assets\screenshots\screenshot15.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot17.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot12.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot19.png" alt="App Screenshots" width="200"/>
+   <img src="assets\screenshots\screenshot6.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot21.png" alt="App Screenshots" width="200"/>
     <img src="assets\screenshots\screenshot8.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot9.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot22.png" alt="App Screenshots" width="200"/>
    <img src="assets\screenshots\screenshot7.png" alt="App Screenshots" width="200"/>
-  
-  
 </p>
 
 ---

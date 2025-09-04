@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ushopia/features/shop/screens/all_products/all_products.dart';
+import '/features/shop/screens/all_products/all_products.dart';
 import '../../../common/widgets/custom_shapes/containers/primary_header_container_with_gradient.dart';
 import '/utilities/constants/image_strings.dart';
 import '../../../common/widgets/layouts/grid_layout.dart';

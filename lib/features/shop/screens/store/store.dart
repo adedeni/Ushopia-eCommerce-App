@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ushopia/features/shop/screens/brands/all_brands.dart';
+import '/features/shop/screens/brands/all_brands.dart';
 import '../cart/cart.dart';
 import '/common/widgets/tabbar/tabbar.dart';
 import '../../../../common/widgets/brands/brands_cards.dart';

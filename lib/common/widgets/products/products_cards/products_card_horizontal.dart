@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/common/widgets/custom_shapes/containers/rounded_container.dart';
-import 'package:ushopia/common/widgets/images/rounded_border_image.dart';
-import 'package:ushopia/common/widgets/texts/brand_title_text_with_verified_icon.dart';
-import 'package:ushopia/common/widgets/texts/product_price_text.dart';
-import 'package:ushopia/common/widgets/texts/product_title_text.dart';
-import 'package:ushopia/utilities/constants/image_strings.dart';
-
+import '/common/widgets/custom_shapes/containers/rounded_container.dart';
+import '/common/widgets/images/rounded_border_image.dart';
+import '/common/widgets/texts/brand_title_text_with_verified_icon.dart';
+import '/common/widgets/texts/product_price_text.dart';
+import '/common/widgets/texts/product_title_text.dart';
+import '/utilities/constants/image_strings.dart';
 import '../../../../utilities/constants/colors.dart';
 import '../../../../utilities/constants/sizes.dart';
 import '../../../../utilities/helpers/helper_functions.dart';

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:iconsax/iconsax.dart';
-import 'package:ushopia/features/shop/screens/cart/cart.dart';
-import 'package:ushopia/features/shop/screens/orders/orders.dart';
+import '/features/shop/screens/cart/cart.dart';
+import '/features/shop/screens/orders/orders.dart';
 import '/features/personalization/screens/address/address.dart';
 import '/common/widgets/appbar/appbar.dart';
 import '/common/widgets/texts/section_heading.dart';

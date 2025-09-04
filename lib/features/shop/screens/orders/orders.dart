@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ushopia/common/widgets/appbar/appbar.dart';
-import 'package:ushopia/utilities/constants/sizes.dart';
+import '/common/widgets/appbar/appbar.dart';
+import '/utilities/constants/sizes.dart';
 
 import 'widgets/order_lists.dart';
 
