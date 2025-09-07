@@ -47,29 +47,30 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC9cJ8nrSOqk3PP6ww4w6PM5SJleIMe3o8',
-    appId: '1:373530031606:web:05f0d03a5c5a509cddc3d7',
-    messagingSenderId: '373530031606',
-    projectId: 'ushopiaapp',
-    authDomain: 'ushopiaapp.firebaseapp.com',
-    storageBucket: 'ushopiaapp.firebasestorage.app',
-    measurementId: 'G-DV0DKE19H4',
+    apiKey: 'AIzaSyAG06sR6__CdJV7CFYg0nZDTOqOztGAbyE',
+    appId: '1:395731786934:web:0f05908109e4c87c3e5a17',
+    messagingSenderId: '395731786934',
+    projectId: 'ushopia-95726',
+    authDomain: 'ushopia-95726.firebaseapp.com',
+    storageBucket: 'ushopia-95726.firebasestorage.app',
+    measurementId: 'G-18XRR5SSZ8',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCKyC4nIQ9VpHn5gmKNZSEwu9BMl0oZGws',
-    appId: '1:373530031606:android:1bcaa09f0a8f2705ddc3d7',
-    messagingSenderId: '373530031606',
-    projectId: 'ushopiaapp',
-    storageBucket: 'ushopiaapp.firebasestorage.app',
+    apiKey: 'AIzaSyAWXwb4xGIxovO1I7ca-P36RM1ZNgR6tOU',
+    appId: '1:395731786934:android:3b5cb36a1f49ae733e5a17',
+    messagingSenderId: '395731786934',
+    projectId: 'ushopia-95726',
+    storageBucket: 'ushopia-95726.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyD2-YZjDXwqlbFK5keJ6_RJ3N5RHGReD6Y',
-    appId: '1:373530031606:ios:a35dfe8480ae9590ddc3d7',
-    messagingSenderId: '373530031606',
-    projectId: 'ushopiaapp',
-    storageBucket: 'ushopiaapp.firebasestorage.app',
+    apiKey: 'AIzaSyARbvWmMCt4hyGImcMwhEcjajXjUEp--Qk',
+    appId: '1:395731786934:ios:d287e2456bd636ca3e5a17',
+    messagingSenderId: '395731786934',
+    projectId: 'ushopia-95726',
+    storageBucket: 'ushopia-95726.firebasestorage.app',
     iosBundleId: 'com.example.tStore',
   );
+
 }
