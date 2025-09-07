@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "373530031606",
+    "project_id": "ushopiaapp",
+    "storage_bucket": "ushopiaapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373530031606:android:1bcaa09f0a8f2705ddc3d7",
+        "android_client_info": {
+          "package_name": "com.example.ushopia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKyC4nIQ9VpHn5gmKNZSEwu9BMl0oZGws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
