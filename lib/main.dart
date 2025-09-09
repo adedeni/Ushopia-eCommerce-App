@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import '/app.dart';
 import 'firebase_options.dart';
 
-//The App Entry Point
+
 Future<void> main() async {
   //Todo: Add Widgets Binding
   //Todo: Init Local Storage
