@@ -9,7 +9,7 @@ class AChipTheme {
     labelStyle: const TextStyle(color: AColors.black),
     selectedColor: AColors.primary,
     padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
-    checkmarkColor: AColors.white,
+    checkmarkColor: AColors.white, 
   );
 
   static ChipThemeData darkChipTheme = const ChipThemeData(
