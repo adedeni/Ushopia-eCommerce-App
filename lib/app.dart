@@ -14,7 +14,7 @@ class App extends StatelessWidget {
   // ignore: unused_element
   Future<void> _launchProductLink() async {
     if (!await launchUrl(_productUri, mode: LaunchMode.externalApplication)) {
-      // handle error, e.g. show snackbar
+     
       debugPrint('Could not launch $_productUri');
     }
   }

@@ -15,7 +15,7 @@ import '/utilities/helpers/helper_functions.dart';
 import 'widgets/category_tab.dart';
 
 class StoreScreen extends StatelessWidget {
-  const StoreScreen({super.key});
+  const StoreScreen ({super.key});
 
   @override
   Widget build(BuildContext context) {
