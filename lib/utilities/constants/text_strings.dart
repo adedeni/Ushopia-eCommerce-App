@@ -7,7 +7,7 @@ ATexts._();//private constructors
   static const String skip = "Skip";
   static const String done = "Done";
   static const String submit = "Submit";
-  static const String appName = "T-Store";
+  static const String appName = "ushopia";
   static const String aContinue = "Continue";
   static const String searchContainerText = "Search in store";
 
