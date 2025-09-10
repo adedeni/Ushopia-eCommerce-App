@@ -21,10 +21,12 @@ dependencies:
   smooth_page_indicator: ^1.2.1
   connectivity_plus: ^6.1.4
   lottie: ^3.3.1 # OR RIVE
+  phone_numbers_parser: ^9.0.11
 
   # Icons
   iconsax: ^0.0.8
   cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.10+1
 
   # State Management
   get: ^4.7.2
@@ -48,6 +50,14 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4  
+
+#--------------- APP ICON CONFIG ------------------#
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logos/ushopia-slash-logo-white.png"
+  min_sdk_android: 21
 
 flutter:
   uses-material-design: true
