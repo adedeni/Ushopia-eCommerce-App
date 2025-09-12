@@ -6,7 +6,7 @@ import 'firebase_options.dart';
 
 
 Future<void> main() async {
-  //Todo: Add Widgets Binding
+  // Todo: Add Widgets Binding
   //Todo: Init Local Storage
   //Todo: Await Native Splash
   // Firebase Initialization
