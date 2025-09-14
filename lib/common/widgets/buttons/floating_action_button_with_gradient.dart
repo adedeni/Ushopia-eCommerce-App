@@ -8,7 +8,7 @@ class AGradientFloatingActionButton extends StatelessWidget {
     super.key,
     required this.onPressed,
     required this.child,
-    this.borderRadius = 28, // Default to a circular radius
+    this.borderRadius = 28,
     this.shape = const CircleBorder(),
   });
 
