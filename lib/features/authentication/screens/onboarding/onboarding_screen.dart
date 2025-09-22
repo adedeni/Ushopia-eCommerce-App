@@ -4,7 +4,7 @@ import 'package:get/get_instance/get_instance.dart';
 import 'package:iconsax/iconsax.dart';
 import '../../../../utilities/constants/sizes.dart';
 import '../../../../utilities/device/device_utility.dart';
-import '/features/authentication/controllers/onboarding_controller.dart';
+import '../../controllers/onboarding/onboarding_controller.dart';
 import '/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 import '/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
 import '/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import '/features/authentication/controllers/onboarding_controller.dart';
+import '../../../controllers/onboarding/onboarding_controller.dart';
 import '/utilities/constants/colors.dart';
 import '/utilities/constants/sizes.dart';
 import '/utilities/device/device_utility.dart';

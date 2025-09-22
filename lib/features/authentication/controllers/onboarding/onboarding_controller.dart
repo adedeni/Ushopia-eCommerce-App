@@ -1,9 +1,9 @@
-// ignore_for_file: strict_top_level_inference
-
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 
-import '../screens/login/login.dart';
+import '../../screens/login/login.dart';
 
 class OnboardingController extends GetxController {
   static OnboardingController get instance => Get.find();
@@ -13,19 +13,31 @@ class OnboardingController extends GetxController {
   Rx<int> currentPageIndex = 0.obs;
 
   /// Update Current Index when Page Scroll
-  void updatePageIndicator(index) => currentPageIndex.value = index;
+  void updatePageIndicator(int index) => currentPageIndex.value = index;
 
   /// Jump to the specific dot selected page.
-  void dotNavigationClick(index) {
+  void dotNavigationClick(dynamic index) {
     currentPageIndex.value = index;
     pageController.jumpTo(index);
-  } 
+  }
 
   /// Update Current Index and jump to next page
   void nextPage() {
     if (currentPageIndex.value == 2) {
-     Get.offAll(const LoginScreen());
-    }else{
+      final storage = GetStorage();
+      if (kDebugMode) {
+        print('===========GET STORAGE Next Button==========');
+        print(storage.read('virgin'));
+      }
+
+      storage.write('virgin', false);
+
+       if (kDebugMode) {
+        print('===========GET STORAGE Next Button==========');
+        print(storage.read('virgin'));
+      }
+      Get.offAll(const LoginScreen());
+    } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
     }
