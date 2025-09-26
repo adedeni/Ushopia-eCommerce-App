@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:ushopia/features/authentication/controllers/signup/signup_controller.dart';
+import 'package:ushopia/utilities/validators/validation.dart';
 import '../../../../../common/widgets/buttons/gradient_elevated_buttons.dart';
-import '/features/authentication/screens/signup/verify_email.dart';
 import '/features/authentication/screens/signup/widgets/terms_condition_checkbox.dart';
 import '/utilities/constants/sizes.dart';
 import '/utilities/constants/text_strings.dart';
 
 class ASignupForm extends StatelessWidget {
-  const ASignupForm({
-    super.key,
-  });
+  const ASignupForm({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(SignupController());
     return Form(
+      key: controller.signupFormKey,
       child: Column(
         children: [
           //First name and Last name
@@ -22,6 +23,9 @@ class ASignupForm extends StatelessWidget {
             children: [
               Expanded(
                 child: TextFormField(
+                  controller: controller.firstName,
+                  validator: (value) =>
+                      AValidator.validateEmptyText('First Name', value),
                   expands: false,
                   decoration: const InputDecoration(
                     labelText: ATexts.firstName,
@@ -29,11 +33,12 @@ class ASignupForm extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(
-                width: ASizes.spaceBtwInputFields,
-              ),
+              const SizedBox(width: ASizes.spaceBtwInputFields),
               Expanded(
                 child: TextFormField(
+                  controller: controller.lastName,
+                  validator: (value) =>
+                      AValidator.validateEmptyText('Last Name', value),
                   expands: false,
                   decoration: const InputDecoration(
                     labelText: ATexts.lastName,
@@ -45,10 +50,11 @@ class ASignupForm extends StatelessWidget {
           ),
 
           ///Username
-          const SizedBox(
-            height: ASizes.spaceBtwInputFields,
-          ),
+          const SizedBox(height: ASizes.spaceBtwInputFields),
           TextFormField(
+            controller: controller.username,
+            validator: (value) =>
+                AValidator.validateEmptyText('Username', value),
             expands: false,
             decoration: const InputDecoration(
               labelText: ATexts.username,
@@ -57,10 +63,10 @@ class ASignupForm extends StatelessWidget {
           ),
 
           ///Email
-          const SizedBox(
-            height: ASizes.spaceBtwInputFields,
-          ),
+          const SizedBox(height: ASizes.spaceBtwInputFields),
           TextFormField(
+            controller: controller.email,
+            validator: (value) => AValidator.validateEmail(value),
             expands: false,
             decoration: const InputDecoration(
               labelText: ATexts.email,
@@ -69,10 +75,10 @@ class ASignupForm extends StatelessWidget {
           ),
 
           ///Phone number
-          const SizedBox(
-            height: ASizes.spaceBtwInputFields,
-          ),
+          const SizedBox(height: ASizes.spaceBtwInputFields),
           TextFormField(
+            controller: controller.phoneNumber,
+            validator: (value) => AValidator.validatePhoneNumber(value),
             expands: false,
             decoration: const InputDecoration(
               labelText: ATexts.phoneNo,
@@ -81,10 +87,10 @@ class ASignupForm extends StatelessWidget {
           ),
 
           ///Password
-          const SizedBox(
-            height: ASizes.spaceBtwInputFields,
-          ),
+          const SizedBox(height: ASizes.spaceBtwInputFields),
           TextFormField(
+            controller: controller.password,
+            validator: (value) => AValidator.validatePassword(value),
             obscureText: true,
             expands: false,
             decoration: const InputDecoration(
@@ -93,23 +99,17 @@ class ASignupForm extends StatelessWidget {
               suffixIcon: Icon(Iconsax.eye_slash),
             ),
           ),
-          const SizedBox(
-            height: ASizes.spaceBtwInputFields,
-          ),
+          const SizedBox(height: ASizes.spaceBtwInputFields),
 
           ///Terms and conditions
           const ATermAndConditionCheckbox(),
-          const SizedBox(
-            height: ASizes.spaceBtwSections,
-          ),
+          const SizedBox(height: ASizes.spaceBtwSections),
 
           ///Sign Up Button
           AGradientElevatedButton(
-            onPressed: () => Get.to(
-              () {
-                return const VerifyEmailScreen();
-              },
-            ),
+            onPressed: () {
+              controller.signup();
+            },
             text: ATexts.createAccount,
           ),
         ],
