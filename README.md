@@ -26,7 +26,7 @@
 - Order tracking
 - Light & dark mode support
 - Responsive design (mobile, tablet, web)
-- Rich product images & banners
+- Rich product images & bannerss
 
 ---
 
