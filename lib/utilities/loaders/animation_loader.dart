@@ -6,7 +6,7 @@ import '../constants/sizes.dart';
 
 /// A widget for displaying an animated loading indicator with optional text and action button.
 class AAnimationLoaderWidget extends StatelessWidget {
-/// Default constructor for the AAnimationLoaderWidget.
+  /// Default constructor for the AAnimationLoaderWidget.
   ///
   /// Parameters:
   ///   - text: The text to be displayed below the animation.
@@ -35,7 +35,11 @@ class AAnimationLoaderWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Lottie.asset(animation, width: MediaQuery.of(context).size.width * 0.8), // Display Lottie animation
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.8,
+            height: MediaQuery.of(context).size.height * 0.3, // Added height constraint to prevent overflow
+            child: Lottie.asset(animation, fit: BoxFit.contain), // Use BoxFit.contain to fit within bounds
+          ),
           const SizedBox(height: ASizes.defaultSpace),
           Text(
             text,

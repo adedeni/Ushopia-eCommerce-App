@@ -22,11 +22,14 @@ class AFullScreenLoader {
           color: AHelperFunctions.isDarkMode(Get.context!) ? AColors.dark : AColors.white,
           width: double.infinity,
           height: double.infinity,
-          child: Column(
-            children: [
-              const SizedBox(height: 250), // Adjust the spacing as needed
-              AAnimationLoaderWidget(text: text, animation: animation),
-            ],
+          child: Center(  // Wrap Column with Center
+            child: Column(
+              mainAxisSize: MainAxisSize.min,  // Add this to prevent overflow
+              mainAxisAlignment: MainAxisAlignment.center,  // Center the content
+              children: [
+                AAnimationLoaderWidget(text: text, animation: animation),
+              ],
+            ),
           ),
         ),
       ),
