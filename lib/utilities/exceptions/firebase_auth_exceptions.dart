@@ -1,5 +1,5 @@
 // Custom exception class to handle various Firebase authentication-related errors.
-// ignore_for_file: unreachable_switch_case
+
 
 class AFirebaseAuthException implements Exception {
   /// The error code associated with the exception.
@@ -51,11 +51,11 @@ class AFirebaseAuthException implements Exception {
         return 'The action code is missing. Please provide a valid action code.';
       case 'user-token-expired':
         return 'The user\'s token has expired, and authentication is required. Please sign in again.';
-      case 'user-not-found':
+      case 'no-user-found':
         return 'No user found for the given email or UID.';
-      case 'invalid-credential':
+      case 'expired-credential':
         return 'The supplied credential is malformed or has expired.';
-      case 'wrong-password':
+      case 'invalid-password':
         return 'The password is invalid. Please check your password and try again.';
       case 'user-token-revoked':
         return 'The user\'s token has been revoked. Please sign in again.';
@@ -85,7 +85,7 @@ class AFirebaseAuthException implements Exception {
         return 'The provided Cordova configuration is invalid.';
       case 'app-deleted':
         return 'This instance of FirebaseApp has been deleted.';
-      case 'user-disabled':
+      case 'account-disabled':
         return 'The user account has been disabled.';
       case 'user-token-mismatch':
         return 'The provided user\'s token has a mismatch with the authenticated user\'s user ID.';

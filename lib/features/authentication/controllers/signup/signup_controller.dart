@@ -33,7 +33,6 @@ class SignupController extends GetxController {
       ///Start loading
       AFullScreenLoader.openLoadingDialog(
         'Processing Information...',
-        
         AImages.docer,
       );
 
@@ -69,7 +68,7 @@ class SignupController extends GetxController {
             password.text.trim(),
           );
 
-      ///Save authenticated user in the firebase firestore
+      ///Register User in the firebase authentication and Save authenticated user in the firebase firestore
       final newUser = UserModel(
         id: userCredential.user!.uid,
         firstName: firstName.text.trim(),
@@ -92,7 +91,7 @@ class SignupController extends GetxController {
       );
 
       ///Move to verify email screen
-      Get.to(() => const VerifyEmailScreen());
+      Get.to(() =>  VerifyEmailScreen(email: email.text.trim()));
     } catch (e) {
       //Remove loader
       AFullScreenLoader.stopLoading();
