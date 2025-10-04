@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:iconsax/iconsax.dart';
+import '../../../../data/repositories/authentication/authentication_repository.dart' show AuthenticationRepository;
 import '/features/shop/screens/cart/cart.dart';
 import '/features/shop/screens/orders/orders.dart';
 import '/features/personalization/screens/address/address.dart';
@@ -139,7 +140,10 @@ class SettingsScreen extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child: OutlinedButton(
-                      onPressed: () => Get.to(() => LoginScreen()),
+                      onPressed:() {
+                        AuthenticationRepository.instance.logout();
+                        Get.to(() => LoginScreen());
+                      }, 
                       child: Text('Logout'),
                     ),
                   ),
