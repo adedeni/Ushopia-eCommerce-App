@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "395731786934-52olbd2g8v3obqvis1s2k1cj8qtj7i75.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ushopia",
+            "certificate_hash": "ab6264c391d72d6d8e4781b0f782cf82bb34963e"
+          }
+        },
+        {
           "client_id": "395731786934-03e1umk05qgln0uf6qre2t8l5r41g90t.apps.googleusercontent.com",
           "client_type": 3
         }

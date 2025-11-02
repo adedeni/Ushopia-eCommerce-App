@@ -32,9 +32,9 @@ class UserModel {
     String firstName = nameParts[0].toLowerCase();
     String lastName = nameParts.length > 1 ? nameParts[1].toLowerCase() : "";
     String camelCaseUsername =
-        '$firstName$lastName'; //This is to convert first and last name
+        '$firstName$lastName'; //This is to join first and last name
     String usernameWithPrefix =
-        'cwt_$camelCaseUsername'; //This add "cwt_" prefix
+        'ade_$camelCaseUsername'; //This add "ade_" prefix
     return usernameWithPrefix;
   }
 
@@ -77,7 +77,9 @@ class UserModel {
         profilePicture: data['ProfilePicture'] ?? '',
       );
     } else {
-      throw Exception("Document data is null.");
+      return UserModel.empty();
+    //  throw Exception("Document data is null.");
+      
     }
   }
 }

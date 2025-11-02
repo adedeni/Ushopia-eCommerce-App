@@ -8,7 +8,7 @@ import 'package:ushopia/utilities/popups/full_screen_loader.dart';
 import 'package:ushopia/utilities/popups/loaders.dart';
 
 import '../../../../utilities/helpers/network_manager.dart';
-import '../../models/user/user_model.dart';
+import '../../../personalization/models/user/user_model.dart';
 
 class SignupController extends GetxController {
   static SignupController get instance => Get.find();
@@ -62,7 +62,7 @@ class SignupController extends GetxController {
       }
 
       ///Register user in the firebase authentication and save user date in firebase
-      final userCredential = await AuthenticationRepository.instance
+      final userCredentials = await AuthenticationRepository.instance
           .registerWithEmailAndPassword(
             email.text.trim(),
             password.text.trim(),
@@ -70,7 +70,7 @@ class SignupController extends GetxController {
 
       ///Register User in the firebase authentication and Save authenticated user in the firebase firestore
       final newUser = UserModel(
-        id: userCredential.user!.uid,
+        id: userCredentials.user!.uid,
         firstName: firstName.text.trim(),
         lastName: lastName.text.trim(),
         username: username.text.trim(),
@@ -95,7 +95,7 @@ class SignupController extends GetxController {
     } catch (e) {
       //Remove loader
       AFullScreenLoader.stopLoading();
-      //Show some generic error message to user
+      //error message to user
       ALoaders.errorSnackBar(title: 'Error', message: e.toString());
     }
   }

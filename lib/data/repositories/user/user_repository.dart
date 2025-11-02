@@ -5,7 +5,7 @@ import 'package:ushopia/utilities/exceptions/firebase_exceptions.dart';
 import 'package:ushopia/utilities/exceptions/format_exceptions.dart';
 import 'package:ushopia/utilities/exceptions/platform_exceptions.dart';
 
-import '../../../features/authentication/models/user/user_model.dart';
+import '../../../features/personalization/models/user/user_model.dart';
 
 class UserRepository extends GetxController {
   static UserRepository get instance => Get.find();
