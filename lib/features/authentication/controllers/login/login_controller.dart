@@ -60,7 +60,9 @@ class LoginController extends GetxController {
       final userCredentials = await AuthenticationRepository.instance
           .loginWithEmailAndPassword(email.text.trim(), password.text.trim());
 
-      //Remove Loader
+      //Save User Record
+      await userController.saveUserRecord(userCredentials);
+      //Remove loader
       AFullScreenLoader.stopLoading();
 
       //Redirect
@@ -110,27 +112,33 @@ class LoginController extends GetxController {
     } catch (e) {
       //Remove loader
       AFullScreenLoader.stopLoading();
-      
+
       // Enhanced error logging
       // print('Google Sign-In Error Type: ${e.runtimeType}');
       // print('Google Sign-In Error Details: $e');
-      
+
       if (e is FirebaseAuthException) {
         // print('Firebase Auth Error Code: ${e.code}');
         // print('Firebase Auth Error Message: ${e.message}');
         // print('Firebase Auth Error Details: ${e.toString()}');
-        
+
         // Show a more specific error message based on the error code
         String errorMessage = 'Sign-in failed. Please try again.';
         if (e.code == 'sign_in_failed') {
-          errorMessage = 'Google Sign-in failed. Please check your Google Play Services and try again.';
+          errorMessage =
+              'Google Sign-in failed. Please check your Google Play Services and try again.';
         } else if (e.code == 'network-request-failed') {
-          errorMessage = 'Network error. Please check your internet connection.';
+          errorMessage =
+              'Network error. Please check your internet connection.';
         } else if (e.code == 'operation-not-allowed') {
-          errorMessage = 'Google Sign-in is not enabled. Please contact support.';
+          errorMessage =
+              'Google Sign-in is not enabled. Please contact support.';
         }
-        
-        ALoaders.errorSnackBar(title: 'Authentication Error', message: errorMessage);
+
+        ALoaders.errorSnackBar(
+          title: 'Authentication Error',
+          message: errorMessage,
+        );
       } else {
         ALoaders.errorSnackBar(title: 'Error!', message: e.toString());
       }
