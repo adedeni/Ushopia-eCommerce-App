@@ -19,16 +19,19 @@ Future<void> main() async {
   //Await Native Splash
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
-  // Firebase Initialization and authentication repository
+  //Initialize firebase
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
-  ).then((FirebaseApp value) => Get.put(AuthenticationRepository()));
-
-  // Inside main() or initialization
-  await FirebaseAppCheck.instance.activate(
-    androidProvider: AndroidProvider.debug, //debug provider during development
-    // androidProvider: AndroidProvider.playIntegrity//during production
   );
+
+  //Activate app check
+  await FirebaseAppCheck.instance.activate(
+    androidProvider:
+        AndroidProvider.playIntegrity, // For production; use debug for testing
+  );
+
+  
+  Get.put(AuthenticationRepository());
 
   //This load all material design, themes, localizations, bindings
   runApp(const App());
